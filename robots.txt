@@ -1,0 +1,6 @@
+# robots.txt for Badimalika Secondary School
+User-agent: *
+Disallow: /private/
+Disallow: /admin/
+Allow: /public/
+Sitemap: https://badimalikasecschool.netlify.app/sitemap.xml

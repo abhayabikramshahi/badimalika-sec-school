@@ -1,12 +1,64 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Red Hat', sans-serif;
+    background-color: #f4f4f4; /* Slightly off-white background */
+    color: #333; /* Dark gray text for better readability */
+    line-height: 1.6;
+    margin: 0;
+    padding: 12px 9px;
+}
+p {
+    padding: 12px 0;
+    font-size: 18px;
+}
+
+/* Copyright Section */
 .copyright {
     text-align: center;
-    box-sizing: border-box;
-    padding: 240px 0;
+    padding: 40px 0; /* Reduced padding for a cleaner look */
+    background-color: #222; /* Dark background for the footer */
+    color: #fff; /* White text color for contrast */
+    font-size: 16px; /* Base font size */
 }
-span{
+
+.copyright span {
     font-weight: 800;
-    font-size: 23px;
+    font-size: 18px; /* Slightly smaller size for consistency */
+    color: #4CAF50; /* Highlight the brand name with a green color */
+    text-decoration: none;
 }
-body{
-    font-family: 'Red Hat', sans-serif;
+
+.copyright span:hover {
+    color: #81C784; /* Lighter green on hover */
+    transition: color 0.3s ease;
+}
+
+/* Add media queries to make it more responsive */
+@media screen and (max-width: 768px) {
+    .copyright {
+        padding: 20px 0; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Slightly smaller font size for mobile */
+    }
+
+    .copyright span {
+        font-size: 16px; /* Adjust size of span text for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .copyright {
+        padding: 15px 0; /* Further reduced padding for very small screens */
+        font-size: 12px; /* Smaller font size for tiny screens */
+    }
+
+    .copyright span {
+        font-size: 14px; /* Smaller span text on very small screens */
+    }
 }

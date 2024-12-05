@@ -1,0 +1,12 @@
+.copyright {
+    text-align: center;
+    box-sizing: border-box;
+    padding: 240px 0;
+}
+span{
+    font-weight: 800;
+    font-size: 23px;
+}
+body{
+    font-family: 'Red Hat', sans-serif;
+}

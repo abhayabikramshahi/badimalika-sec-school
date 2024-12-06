@@ -15,7 +15,7 @@ body {
     padding: 30px 0;
 }
 .img{
-    background: url(/images/parallax.jpg);
+    background: url(/school/images/parallax.jpg);
     height: 260px;
     background-repeat: no-repeat;
     width: 100%;
@@ -142,4 +142,23 @@ hr {
 .content p{
     padding: 20px 0;
    line-height: 30px;
+}
+@media screen and (max-width: 260px) {
+    .noticeboard h2 {
+        /* height: 50vh; */
+        align-items: center;
+        display: flex
+    ;
+        justify-content: center;
+        color: rgb(240, 240, 240);
+        font-size: 48px;
+        letter-spacing: 2px;
+        padding: 53px 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .noticeboard h2 {
+        padding: 115px 0;
+        font-size: 32px;
+    }
 }

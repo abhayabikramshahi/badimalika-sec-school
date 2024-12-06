@@ -338,3 +338,15 @@ marquee:hover{
       transform: translateY(0);
     }
   }
+  @media screen and (max-width: 768px) {
+    .modal-content {
+      background-color: white;
+      margin: 10% auto;
+      padding: 20px;
+      border-radius: 8px;
+      width: 95%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+  }
+  
+  }

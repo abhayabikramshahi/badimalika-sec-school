@@ -34,44 +34,44 @@ body {
     letter-spacing: 14px;
 }
 
+
 /* Basic Navbar Styling */
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-  
-    position: relative;
-    z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 9999;
 }
 
+
 .navbar .logo img {
-    height: 70px;
+  height: 123px;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 20pxfoo;
 }
 
 .nav-links li {
-    padding: 0;
+    padding: 0px 15px;
 }
 
 .nav-links a {
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     transition: color 0.3s ease, background-color 0.3s ease;
+    text-transform: uppercase;
 }
 
 .nav-links a:hover {
-    background-color: #ffc107; /* Gold hover background */
-    color: #333; /* Dark hover text */
-    border-radius: 5px;
-    padding: 10px 15px;
+    color: rgb(101, 101, 101);
+    text-decoration: underline;
 }
 
 /* Hamburger Menu Styling */
@@ -95,21 +95,27 @@ body {
 
 /* Responsive Styling */
 @media (max-width: 768px) {
+  .navbar{
+    display: flex;
+    align-items: center;
+  }
     .nav-links {
         display: none;
         flex-direction: column;
         align-items: center;
         background-color: #0078d4;
         position: absolute;
-        top: 80px;
+        top: 149px;
         left: 0;
         width: 100%;
         z-index: 9999;
-        padding: 12px 12px;
+        padding: 20px 12px;
+        gap: 12px;
     }
 
     .nav-links.show {
         display: flex;
+        align-items: start;
     }
 
     .hamburger-menu {

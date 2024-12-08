@@ -48,7 +48,7 @@ marquee:hover{
 .nav-links a {
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     transition: color 0.3s ease, background-color 0.3s ease;
     text-transform: uppercase;
@@ -343,4 +343,28 @@ marquee:hover{
   .latest-update {
     width: 90%; /* You could use a percentage for responsiveness */
   }
+}
+button {
+  display: flex
+;
+  align-items: center;
+  border: 1px solid transparent;
+  background: rgb(168, 240, 95);
+  border-radius: 19px;
+  width: 7rem;
+  height: 36px;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+  padding: 0 16px;
+}
+button img {
+  height: 25px;
+}
+.contact-deitals {
+  display: flex
+;
+  justify-content: space-between;
+  padding: 6px 22px;
+  align-items: center;
 }

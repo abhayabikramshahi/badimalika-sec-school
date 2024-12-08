@@ -34,6 +34,6 @@ article p {
 @media screen and (max-width: 768px) {
     article{
         width: 90%;
-        padding: 0 12px;
+        padding: 40px 12px;
     }
 }

@@ -28,7 +28,6 @@ marquee:hover{
   padding: 10px 20px;
   position: relative;
   z-index: 9999;
-  background: #007EC5;
 }
 
 
@@ -48,15 +47,15 @@ marquee:hover{
 
 .nav-links a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
     font-weight: bold;
     transition: color 0.3s ease, background-color 0.3s ease;
     text-transform: uppercase;
 }
 
 .nav-links a:hover {
-    color: whitesmoke;
+    color: rgb(101, 101, 101);
     text-decoration: underline;
 }
 

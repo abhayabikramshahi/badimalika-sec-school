@@ -1,0 +1,279 @@
+[
+    {
+      "roll_no": 1,
+      "name": "Aarav Shrestha",
+      "grades": {
+        "Math": "A",
+        "Science": "B+",
+        "English": "A-",
+        "Social Studies": "B",
+        "Nepali": "A"
+      },
+      "GPA": 3.8
+    },
+    {
+      "roll_no": 2,
+      "name": "Sita Thapa",
+      "grades": {
+        "Math": "B+",
+        "Science": "A",
+        "English": "A",
+        "Social Studies": "B+",
+        "Nepali": "A-"
+      },
+      "GPA": 3.7
+    },
+    {
+      "roll_no": 3,
+      "name": "Rohan Karki",
+      "grades": {
+        "Math": "A-",
+        "Science": "A",
+        "English": "B+",
+        "Social Studies": "A",
+        "Nepali": "B+"
+      },
+      "GPA": 3.6
+    },
+    {
+      "roll_no": 4,
+      "name": "Kriti Gurung",
+      "grades": {
+        "Math": "A",
+        "Science": "A",
+        "English": "A",
+        "Social Studies": "A",
+        "Nepali": "A"
+      },
+      "GPA": 4.0
+    },
+    {
+      "roll_no": 5,
+      "name": "Bikash Bista",
+      "grades": {
+        "Math": "B",
+        "Science": "B",
+        "English": "A-",
+        "Social Studies": "B+",
+        "Nepali": "A-"
+      },
+      "GPA": 3.4
+    },
+    {
+      "roll_no": 6,
+      "name": "Nisha Khadka",
+      "grades": {
+        "Math": "A-",
+        "Science": "A-",
+        "English": "B+",
+        "Social Studies": "B",
+        "Nepali": "A"
+      },
+      "GPA": 3.5
+    },
+    {
+      "roll_no": 7,
+      "name": "Sunil Tamang",
+      "grades": {
+        "Math": "B+",
+        "Science": "A",
+        "English": "A-",
+        "Social Studies": "B+",
+        "Nepali": "B+"
+      },
+      "GPA": 3.6
+    },
+    {
+      "roll_no": 8,
+      "name": "Puja Lama",
+      "grades": {
+        "Math": "A",
+        "Science": "A-",
+        "English": "A",
+        "Social Studies": "A",
+        "Nepali": "A-"
+      },
+      "GPA": 3.9
+    },
+    {
+      "roll_no": 9,
+      "name": "Ramesh Adhikari",
+      "grades": {
+        "Math": "B+",
+        "Science": "B",
+        "English": "A-",
+        "Social Studies": "B",
+        "Nepali": "A"
+      },
+      "GPA": 3.5
+    },
+    {
+      "roll_no": 10,
+      "name": "Kabita Shahi",
+      "grades": {
+        "Math": "A",
+        "Science": "A",
+        "English": "A",
+        "Social Studies": "A",
+        "Nepali": "A"
+      },
+      "GPA": 4.0
+    },
+    {
+      "roll_no": 11,
+      "name": "Raj Khatri",
+      "grades": {
+        "Math": "B",
+        "Science": "B",
+        "English": "A-",
+        "Social Studies": "B+",
+        "Nepali": "A-"
+      },
+      "GPA": 3.4
+    },
+    {
+      "roll_no": 12,
+      "name": "Anita Magar",
+      "grades": {
+        "Math": "A",
+        "Science": "A-",
+        "English": "A",
+        "Social Studies": "A",
+        "Nepali": "B+"
+      },
+      "GPA": 3.9
+    },
+    {
+      "roll_no": 13,
+      "name": "Manish Basnet",
+      "grades": {
+        "Math": "A-",
+        "Science": "B+",
+        "English": "B",
+        "Social Studies": "B",
+        "Nepali": "A"
+      },
+      "GPA": 3.5
+    },
+    {
+      "roll_no": 14,
+      "name": "Rekha Singh",
+      "grades": {
+        "Math": "A",
+        "Science": "A",
+        "English": "A",
+        "Social Studies": "A",
+        "Nepali": "A"
+      },
+      "GPA": 4.0
+    },
+    {
+      "roll_no": 15,
+      "name": "Subash KC",
+      "grades": {
+        "Math": "B+",
+        "Science": "A",
+        "English": "A-",
+        "Social Studies": "B",
+        "Nepali": "A"
+      },
+      "GPA": 3.6
+    },
+    {
+      "roll_no": 16,
+      "name": "Pratima Giri",
+      "grades": {
+        "Math": "A",
+        "Science": "A-",
+        "English": "A",
+        "Social Studies": "A",
+        "Nepali": "A-"
+      },
+      "GPA": 3.8
+    },
+    {
+      "roll_no": 17,
+      "name": "Ashish Rai",
+      "grades": {
+        "Math": "B",
+        "Science": "B+",
+        "English": "A-",
+        "Social Studies": "B+",
+        "Nepali": "B"
+      },
+      "GPA": 3.4
+    },
+    {
+      "roll_no": 18,
+      "name": "Rita Baral",
+      "grades": {
+        "Math": "A",
+        "Science": "A",
+        "English": "A",
+        "Social Studies": "A",
+        "Nepali": "A"
+      },
+      "GPA": 4.0
+    },
+    {
+      "roll_no": 19,
+      "name": "Prakash Oli",
+      "grades": {
+        "Math": "B+",
+        "Science": "B+",
+        "English": "A",
+        "Social Studies": "A",
+        "Nepali": "A-"
+      },
+      "GPA": 3.7
+    },
+    {
+      "roll_no": 20,
+      "name": "Niraj Regmi",
+      "grades": {
+        "Math": "A",
+        "Science": "A",
+        "English": "A",
+        "Social Studies": "A",
+        "Nepali": "A"
+      },
+      "GPA": 4.0
+    },
+    {
+      "roll_no": 21,
+      "name": "Sarita Rawal",
+      "grades": {
+        "Math": "A",
+        "Science": "A",
+        "English": "A",
+        "Social Studies": "A",
+        "Nepali": "A"
+      },
+      "GPA": 4.0
+    },
+    {
+      "roll_no": 22,
+      "name": "Bibek Ghimire",
+      "grades": {
+        "Math": "B+",
+        "Science": "B",
+        "English": "A-",
+        "Social Studies": "B+",
+        "Nepali": "A"
+      },
+      "GPA": 3.6
+    },
+    {
+      "roll_no": 23,
+      "name": "Kabir Adhikari",
+      "grades": {
+        "Math": "A-",
+        "Science": "B+",
+        "English": "B+",
+        "Social Studies": "B",
+        "Nepali": "A-"
+      },
+      "GPA": 3.5
+    }
+  ]
+  

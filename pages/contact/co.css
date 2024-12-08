@@ -269,3 +269,14 @@ p {
 .email a:hover{
     text-decoration: underline;
 }
+@media screen and (max-width: 768px) {
+    .wrap {
+        display: flex
+    ;
+        flex-direction: column;
+    }
+    .office {
+        padding: 48px 51px;
+        width: 90%;
+    }
+}

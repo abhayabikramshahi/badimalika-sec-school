@@ -30,7 +30,6 @@ marquee:hover{
   padding: 10px 20px;
   position: relative;
   z-index: 9999;
-  background: #007EC5;
 }
 
 
@@ -41,7 +40,7 @@ marquee:hover{
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20pxfoo;
+    /* gap: 20px; */
 }
 
 .nav-links li {
@@ -50,15 +49,15 @@ marquee:hover{
 
 .nav-links a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
     font-weight: bold;
     transition: color 0.3s ease, background-color 0.3s ease;
     text-transform: uppercase;
 }
 
 .nav-links a:hover {
-    color: whitesmoke;
+    color: rgb(35, 35, 35);
     text-decoration: underline;
 }
 
@@ -187,4 +186,19 @@ marquee:hover{
   
   .sub-dropdown li {
     list-style-type: none;
+  }
+  @media screen and (max-width: 768px) {
+    .title h1 {
+        font-size: 31px;
+        line-height: 49px;
+    }
+  }
+  @media screen and (max-width: 641px) {
+    .title h1 {
+        font-size: 29px;
+        line-height: 49px;
+    }
+    .logo img {
+        height: 188px;
+    }
   }

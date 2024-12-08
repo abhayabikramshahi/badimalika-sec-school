@@ -1,7 +1,4 @@
-document.querySelectorAll('.dropdown').forEach(item => {
-    item.addEventListener('click', function(e) {
-        e.preventDefault();
-        const dropdownContent = item.querySelector('.dropdown-content');
-        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
-    });
+document.querySelector('.hamburger-menu').addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.toggle('show');
+    this.classList.toggle('active');
 });

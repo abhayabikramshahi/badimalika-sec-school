@@ -6,5 +6,17 @@
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
+     <url>
+        <loc>https://badimalikasecschool.netlify.app/pages/about-us/about/</loc>
+        <lastmod>2024-12-05</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+     <url>
+        <loc>https://badimalikasecschool.netlify.app/slide-notice/1/examp/</loc>
+        <lastmod>2024-12-05</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
     <!-- Add more URLs as your site grows -->
 </urlset>

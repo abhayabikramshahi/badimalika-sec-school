@@ -17,7 +17,7 @@ function searchStudent() {
     }
 
     // Path to the JSON file for the selected class
-    const jsonPath = `class/${classSelect}/students.json`;
+    const jsonPath = `/Results/class/${classSelect}/students.json`;
     console.log('Fetching JSON from:', jsonPath); 
 
     fetch(jsonPath)

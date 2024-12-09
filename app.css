@@ -350,19 +350,16 @@ marquee:hover{
     width: 90%; /* You could use a percentage for responsiveness */
   }
 }
-button {
-  display: flex
-;
-  align-items: center;
+button#imp {
+  padding: 17px;
+  font-size: 14px;
   border: 1px solid transparent;
-  background: rgb(168, 240, 95);
-  border-radius: 19px;
-  width: 7rem;
-  height: 36px;
+  /* box-shadow: 1px 1px 10px black; */
+  background: cornflowerblue;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 10px;
   cursor: pointer;
-  align-items: center;
-  text-align: center;
-  padding: 0 16px;
 }
 button img {
   height: 25px;

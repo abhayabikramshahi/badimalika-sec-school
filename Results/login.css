@@ -1,0 +1,81 @@
+   /* Modernize the login page design */
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(45deg, #4e73df, #1cc88a);
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-size: cover;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    #login-form {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 450px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    label {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+      background-color: #f9f9f9;
+    }
+
+    input:focus, select:focus, button:focus {
+      outline: none;
+      border-color: #4e73df;
+    }
+
+    button {
+      background-color: #4e73df;
+      color: #fff;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2e59d9;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #fff;
+    }

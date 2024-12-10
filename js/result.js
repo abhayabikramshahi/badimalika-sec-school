@@ -1,65 +1,50 @@
-function searchStudent() {
-    const classSelect = document.getElementById('classSelect').value;
-    const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
-    const resultContainer = document.getElementById('result');
-
-    resultContainer.innerHTML = ''; // Clear previous results
-
-    if (!classSelect) {
-        resultContainer.innerHTML = '<p class="no-result">Please select a class.</p>';
-        return;
-    }
-
-    if (!searchInput) {
-        resultContainer.innerHTML = '<p class="no-result">Please enter a roll number or name.</p>';
-        return;
-    }
-
-    // Display loading message
-    resultContainer.innerHTML = '<p class="loading">Loading...</p>';
-
-    // Path to the JSON file for the selected class
-    const jsonPath = `../Results/${classSelect}/students.json`;
-    console.log('Fetching JSON from:', jsonPath); 
-
-    setTimeout(() => {
-        fetch(jsonPath)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                return response.json();
-            })
-            .then(data => {
-                // Find student by roll number or name
-                const student = data.find(student =>
-                    student.roll_no.toString() === searchInput ||
-                    student.name.toLowerCase().includes(searchInput)
-                );
-
-                if (student) {
-                    // Display student information
-                    const studentInfo = `
-                        <p><strong>Name:</strong> ${student.name}</p>
-                        <p><strong>Roll No:</strong> ${student.roll_no}</p>
-                        <p><strong>GPA:</strong> ${student.GPA}</p>
-                        <p><strong>Grades:</strong></p>
-                        <ul>
-                            <li><strong>Math:</strong> ${student.grades.Math}</li>
-                            <li><strong>Science:</strong> ${student.grades.Science}</li>
-                            <li><strong>English:</strong> ${student.grades.English}</li>
-                            <li><strong>Social Studies:</strong> ${student.grades['Social Studies']}</li>
-                            <li><strong>Nepali:</strong> ${student.grades.Nepali}</li>
-                        </ul>
-                    `;
-                    resultContainer.innerHTML = `<p class="result-container">${studentInfo}</p>`;
-                } else {
-                    resultContainer.innerHTML = '<p class="no-result">No student found with this roll number or name.</p>';
-                }
-            })
-            .catch(error => {
-                console.error('Error fetching JSON file:', error);
-                resultContainer.innerHTML = '<p class="no-result">Error loading student data. Please try again later.</p>';
-            });
-    }, 2000); // Simulate 2-second delay
-}
+// Function to get query parameters from URL
+function getQueryParams() {
+    const params = {};
+    const queryString = window.location.search.substring(1);
+    const paramPairs = queryString.split('&');
+  
+    paramPairs.forEach(pair => {
+      const [key, value] = pair.split('=');
+      params[key] = decodeURIComponent(value);
+    });
+  
+    return params;
+  }
+  
+  const params = getQueryParams();
+  const classSelect = params.class;
+  const username = params.username;
+  
+  if (!classSelect || !username) {
+    alert('Invalid access. Please log in first.');
+    window.location.href = 'login.html';
+  }
+  
+  const jsonPath = `../Results/${classSelect}/students.json`;
+  
+  fetch(jsonPath)
+    .then(response => response.json())
+    .then(data => {
+      const student = data.find(student => student.username === username);
+      
+      if (student) {
+        document.getElementById('result').style.display = 'block';
+        document.getElementById('student-name').innerText = student.name;
+  
+        const resultTable = document.getElementById('result-table');
+  
+        for (const [subject, marks] of Object.entries(student.results)) {
+          const row = document.createElement('tr');
+          row.innerHTML = `<td>${subject}</td><td>${marks}</td>`;
+          resultTable.appendChild(row);
+        }
+      } else {
+        alert('Student not found.');
+        window.location.href = 'login.html';
+      }
+    })
+    .catch(error => {
+      console.error('Error loading JSON file:', error);
+    });
+  

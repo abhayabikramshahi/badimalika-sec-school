@@ -1,159 +1,159 @@
-/* General Reset */
+/* Reset some basic styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Overall body */
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f3f4f6;
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fb;
   color: #333;
-  line-height: 1.6;
 }
 
-header h1 {
-  text-align: center;
-  color: #333;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-top: 20px;
-}
-
-header p {
-  text-align: center;
-  font-size: 1rem;
-  color: #555;
-  margin-top: 5px;
-}
-
-.search-container {
+/* Container for layout */
+.container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 30px;
+  min-height: 100vh;
 }
 
-.search-container select,
-.search-container input,
-.search-container button {
-  margin: 10px;
-  padding: 15px;
-  font-size: 16px;
-  border-radius: 8px;
-  border: 1px solid #d1d5db;
-  width: 100%;
-  max-width: 350px;
-  outline: none;
-  transition: all 0.3s ease-in-out;
-}
-
-.search-container select {
-  background-color: #fff;
-  cursor: pointer;
-}
-
-.search-container input {
-  width: 100%;
-}
-
-.search-container button {
-  background-color: #4CAF50;
+/* Sidebar styles */
+.sidebar {
+  background-color: #2C3E50;
   color: white;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  padding: 20px;
+  width: 250px;
+  height: 100%;
+  position: fixed;
 }
 
-.search-container button:hover {
-  background-color: #45a049;
-  transform: translateY(-2px);
+.sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
 }
 
-.search-container input:focus,
-.search-container select:focus {
-  border-color: #4CAF50;
-  box-shadow: 0 0 5px rgba(76, 175, 80, 0.6);
+.sidebar ul {
+  list-style-type: none;
 }
 
-.result-container {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
+.sidebar ul li {
+  margin: 20px 0;
 }
 
-.result-table {
-  width: 100%;
-  max-width: 1100px;
-  border-collapse: collapse;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-.result-table th,
-.result-table td {
-  padding: 15px 20px;
-  text-align: left;
-  border: 1px solid #e5e7eb;
-}
-
-.result-table th {
-  background-color: #4CAF50;
+.sidebar ul li a {
+  text-decoration: none;
   color: white;
+  font-size: 18px;
+  display: block;
+}
+
+.sidebar ul li a:hover {
+  background-color: #34495E;
+  padding-left: 10px;
+}
+
+/* Main content area */
+.main-content {
+  margin-left: 250px;
+  padding: 40px;
+  width: 100%;
+}
+
+/* Title section */
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title h1 {
+  font-size: 36px;
+  color: #2C3E50;
   text-transform: uppercase;
 }
 
-.result-table td {
-  font-size: 0.95rem;
+/* Results section */
+.result {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.result-table tr:nth-child(even) {
-  background-color: #f9f9f9;
+.result h2 {
+  font-size: 28px;
+  color: #2C3E50;
+  margin-bottom: 10px;
 }
 
-.result-table tr:hover {
-  background-color: #f1f1f1;
-  transition: background-color 0.3s ease;
+.result h3 {
+  font-size: 22px;
+  color: #7F8C8D;
+  margin-bottom: 20px;
 }
 
-/* Mobile Responsiveness */
+#result-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#result-table th, #result-table td {
+  padding: 12px;
+  text-align: left;
+}
+
+#result-table th {
+  background-color: #34495E;
+  color: white;
+}
+
+#result-table tr:nth-child(even) {
+  background-color: #ecf0f1;
+}
+
+#result-table tr:hover {
+  background-color: #bdc3c7;
+}
+
+/* Responsive design */
 @media (max-width: 768px) {
-  .search-container select,
-  .search-container input,
-  .search-container button {
-    width: 90%;
+  .container {
+    flex-direction: column;
   }
 
-  .result-table {
-    width: 95%;
-  }
-
-  header h1 {
-    font-size: 1.75rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .search-container select,
-  .search-container input,
-  .search-container button {
+  .sidebar {
     width: 100%;
+    height: auto;
+    position: relative;
+    padding: 15px;
   }
 
-  header h1 {
-    font-size: 1.5rem;
+  .main-content {
+    margin-left: 0;
+    padding: 20px;
   }
 }
-
-
-.result-container {
-  margin-top: 30px;
+.fedback {
+  padding: 27px 14px;
+  gap: 21px;
   display: flex
 ;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+}
+button.satisfied {
+  padding: 12px;
+  background: cornflowerblue;
+  border: 1px solid cornflowerblue;
+  border-radius: 32px;
+  color: whitesmoke;
+  font-size: 16px;
+  cursor: pointer ;
+}
+button.no {
+  padding: 12px;
+  border-radius: 37px;
+  border: 1px solid red;
+  background: red;
+  color: whitesmoke;
+  font-size: 16px;
+  cursor: pointer;
 }

@@ -3,61 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Grades - Badimalika Secondary School</title>
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Check the exam grades of students from Badimalika Secondary School. Select your class, enter your roll number or name, and view your results instantly.">
-  <meta name="keywords" content="student grades, Badimalika Secondary School, student results, exam results, class results, roll number search, student marks, school exam grades, student result portal">
-  <meta name="author" content="Badimalika Secondary School">
-  <meta property="og:title" content="Student Exam Grades - Badimalika Secondary School">
-  <meta property="og:description" content="Access the exam results of students at Badimalika Secondary School.">
-  <meta property="og:image" content="path/to/preview-image.jpg"> <!-- Replace with your image path -->
-  <meta property="og:url" content="https://your-website-url.com/result.html">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <!-- Favicon -->
-  <link rel="icon" href="path/to/favicon.ico" type="image/x-icon"> <!-- Replace with your favicon path -->
-
-  <!-- Stylesheet -->
+  <title>Student Result Dashboard</title>
   <link rel="stylesheet" href="result.css">
-  
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
+  <div class="container">
+    <!-- Sidebar (optional for future use) -->
+    <div class="sidebar">
+      <h2>Dashboard</h2>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="result.html">Results</a></li>
 
-  <header>
-    <h1>Student Exam Grades</h1>
-    <p>Badimalika Secondary School</p>
-  </header>
-
-  <div class="search-container">
-    <select id="classSelect" aria-label="Select Class">
-      <option value="" disabled selected>Select Class</option>
-      <option value="class1">Class 1</option>
-      <option value="class2">Class 2</option>
-      <option value="class3">Class 3</option>
-      <option value="class4">Class 4</option>
-      <option value="class5">Class 5</option>
-      <option value="class6">Class 6</option>
-      <option value="class7">Class 7</option>
-      <option value="class8">Class 8</option>
-      <option value="class9">Class 9</option>
-      <option value="class10">Class 10</option>
-      <option value="class11">Class 11</option>
-      <option value="class12">Class 12</option>
-    </select>
-
-    <input type="text" id="searchInput" placeholder="Enter Roll Number or Name" aria-label="Search for student by roll number or name">
-    <button onclick="searchStudent()">Search</button>
+      </ul>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="title">
+        <h1>Student Results</h1>
+      </div>
+      <div id="result" class="result">
+        <h2>Welcome, <span id="student-name"></span></h2>
+        <h3>Your Results</h3>
+        <table id="result-table">
+          <tr>
+            <th>Subject</th>
+            <th>Marks</th>
+          </tr>
+        </table>
+      </div>
+      <!-- <div class="fedback">
+        <button class="satisfied" id="satisfied">Satisfied with result</button>
+        <button class="no" id="no">Non-Satisfied with result</button>
+      </div> -->
+      <p id="luu"></p>
+      <p id="nooText"></p>
+    </div>
   </div>
 
-  <p class="loading"></p>
-  <p class="result" class="result-container"></p>
-
-  
-
-  <script src="../js/result.js"></script>
+  <script src="/js/result.js"></script>
 </body>
 </html>

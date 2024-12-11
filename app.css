@@ -17,6 +17,72 @@ body {
 
 
 
+        /* Preloader Styles */
+        .preloader {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 9999; /* Always on top */
+          transition: opacity 0.5s ease; /* Smooth fade-out */
+      }
+
+      .preloader.hidden {
+          opacity: 0; /* Fade out effect */
+          visibility: hidden; /* Hide after fade-out */
+      }
+
+      .preloader img {
+          width: 250px;
+          height: auto; 
+          animation: fadein 1.5s ease-in-out infinite;
+          height: 250px;
+          object-fit: cover;
+         
+      }
+
+      @keyframes fadein {
+          0%, 100% {
+              opacity: 1;
+          }
+          50% {
+              opacity: 0.5;
+          }
+      }
+
+      /* Content Wrapper */
+      .content-wrapper {
+          display: none; /* Hide content initially */
+          opacity: 0;
+          animation: fadeinContent 0.5s ease-in-out forwards;
+      }
+
+      @keyframes fadeinContent {
+          from {
+              opacity: 0;
+          }
+          to {
+              opacity: 1;
+          }
+      }
+
+      /* Example Navbar */
+      .navbar {
+        
+          color: white;
+          padding: 10px 20px;
+          text-align: center;
+      }
+
+      .main-content {
+          padding: 20px;
+          text-align: center;
+      }
 marquee:hover{
  text-decoration: underline;
 }
@@ -27,7 +93,7 @@ marquee:hover{
   justify-content: space-between;
   padding: 10px 20px;
   position: relative;
-  z-index: 9999;
+
 }
 
 
@@ -325,6 +391,24 @@ marquee:hover{
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       text-align: center;
   }
+  .top-navbar a{
+    display: none;
+  }
+  .top-navbar{
+    width: 100%;
+  }
+  .btn-header a{
+    display: block;
+  }
+  .icons {
+    display: flex
+;
+padding: 0 0 ;
+    align-items: end;
+    justify-content: end;
+    text-align: end;
+    width: 100%;
+}
   
   }
   .txt h1 {
@@ -358,30 +442,17 @@ marquee:hover{
     width: 90%; /* You could use a percentage for responsiveness */
   }
 }
-button#imp {
-  padding: 17px;
-  font-size: 14px;
-  border: 1px solid transparent;
-  /* box-shadow: 1px 1px 10px black; */
-  background: cornflowerblue;
-  color: #ffffff;
-  text-transform: uppercase;
-  border-radius: 10px;
-  cursor: pointer;
+.left {
+  display: flex
+;
+  gap: 9px;
 }
+
+
 button img {
   height: 25px;
 }
-.contact-deitals {
-  display: flex
-;
-  justify-content: space-between;
-  padding: 6px 22px;
-  align-items: center;
-}
-.email {
-  padding: 12px 0;
-}
+
 .blog, .result {
   display: flex;
   overflow: hidden;
@@ -401,8 +472,114 @@ button img {
   text-align: center;
 }
 .title-latest-update p {
-  margin-top: -60px;
+  margin-top: 18px;
 }
 .title-latest-update img {
   height: 207px;
+}
+.top-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1441C2;
+  padding: 12px 24px;
+  flex-wrap: wrap;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icons a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+.btn-header a {
+  background-color: #dc3545;
+  border: none;
+  color: whitesmoke;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.top-navbar hr {
+  height: 24px;
+  width: 1px;
+  background-color: #fff;
+  margin: 0 10px;
+}
+
+.nav-ul ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.nav-ul ul li {
+  position: relative;
+}
+
+.nav-ul ul li a {
+  color: rgb(214, 214, 214);
+  text-decoration: none;
+  font-size: 14px;
+}
+.nav-ul ul li .badge {
+  background-color: #28a745;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 10px;
+  position: absolute;
+  top: -5px;
+  right: -10px;
+}
+
+@media (max-width: 768px) {
+  .top-navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .icons {
+      justify-content: flex-start;
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .nav-ul ul {
+      flex-wrap: wrap;
+      gap: 10px;
+      display: none;
+  }
+
+
+}
+
+@media (max-width: 480px) {
+  .icons {
+      flex-wrap: wrap;
+      gap: 10px;
+  }
+
+  .btn-header a {
+      padding: 6px 10px;
+      font-size: 12px;
+  }
+
+  .nav-ul ul {
+      flex-direction: column;
+      gap: 8px;
+  }
+
+  .nav-ul ul li {
+      padding: 5px 0;
+  }
 }

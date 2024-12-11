@@ -42,7 +42,7 @@ body {
     padding: 10px 20px;
   
     position: relative;
-    z-index: 10;
+   
 }
 
 .navbar .logo img {
@@ -280,3 +280,64 @@ p {
         width: 90%;
     }
 }
+        /* Preloader Styles */
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999; /* Always on top */
+            transition: opacity 0.5s ease; /* Smooth fade-out */
+        }
+  
+        .preloader.hidden {
+            opacity: 0; /* Fade out effect */
+            visibility: hidden; /* Hide after fade-out */
+        }
+  
+        .preloader img {
+            width: 250px;
+            height: auto; 
+            animation: fadein 1.5s ease-in-out infinite;
+            height: 250px;
+            object-fit: cover;
+           
+        }
+  
+        @keyframes fadein {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+  
+        /* Content Wrapper */
+        .content-wrapper {
+            display: none; /* Hide content initially */
+            opacity: 0;
+            animation: fadeinContent 0.5s ease-in-out forwards;
+        }
+  
+        @keyframes fadeinContent {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+  
+        /* Example Navbar */
+        .navbar {
+          
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }

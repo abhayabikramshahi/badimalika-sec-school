@@ -1,11 +1,18 @@
 # Enable Rewrite Engine
 RewriteEngine On
 
-# Remove .html extension from URLs
+# Ensure the rewrite base is set to the root of your site or a subdirectory if necessary
+RewriteBase /
+
+# Remove .html extension from all URLs
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^.]+)$ $1.html [L]
+RewriteRule ^(.*)$ $1.html [L]
 
-# Redirect requests with .html to URLs without .html
-RewriteCond %{THE_REQUEST} \s([^.]+)\.html[\s?]
-RewriteRule ^([^.]+)\.html$ /$1 [L,R=301]
+# Redirect requests with .html to URLs without .html (prevent duplicate URLs)
+RewriteCond %{THE_REQUEST} \s([^\s]+)\.html[\s?]
+RewriteRule ^(.*)\.html$ /$1 [L,R=301]
+
+# Ensure the server does not redirect endlessly
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)/$ /$1 [L]

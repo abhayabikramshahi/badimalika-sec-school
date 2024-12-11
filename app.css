@@ -469,10 +469,24 @@ button img {
   display: flex
 ;
   flex-direction: column;
-  text-align: center;
+  text-align: start;
+  align-items: start;
 }
 .title-latest-update p {
   margin-top: 18px;
+  align-items: start;
+  display: flex;
+  justify-content: start;
+  text-align: start;
+  font-size: 23px;
+}
+hr.hori {
+  width: 100%;
+  height: 1px;
+  color: whitesmoke !important;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #ccc;
 }
 .title-latest-update img {
   height: 207px;

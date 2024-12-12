@@ -39,6 +39,24 @@
         <h2>Vacancy</h2>
     </div>
    </div>
+   <div class="upload">
+    <i class="fa-solid fa-upload"></i>
+    <h3>Upload Vacancy</h3>
+    <div class="wrap">
+        <button>Upload Dashboard</button>
+    </div>
+</div>
+
+<div class="uploaded-images">
+    <h3>Vacancys</h3>
+    <div id="image-gallery"></div>
+</div>
+
+<div id="full-screen-view" style="display: none; position: fixed; z-index: 9999; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); justify-content: center; align-items: center;">
+    <img id="full-screen-image" src="" style="max-width: 90%; max-height: 90%;" />
+    <button id="close-fullscreen" style="position: absolute; top: 20px; right: 20px; background: red; color: white; border: none; padding: 10px; cursor: pointer;">Close</button>
+    <button id="delete-image" style="position: absolute; bottom: 20px; background: red; color: white; border: none; padding: 10px; cursor: pointer;">Delete</button>
+</div>
    <footer class="footer">
     <div class="footer-left">
       <img src="/471f74d9-7a7c-4024-82b7-251a5aba58a3.jpg" alt="School Logo" class="logo">
@@ -72,5 +90,6 @@
   </div>
    <script src="/js/hamburger.js"></script>
    <script src="/js/preloader.js"></script>
+   <script src="/js/upload.js"></script>
 </body>
 </html>

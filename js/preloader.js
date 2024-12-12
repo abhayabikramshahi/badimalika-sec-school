@@ -4,4 +4,4 @@ setTimeout(() => {
     document.querySelector('.navbar').style.display = 'none';
     document.querySelector('a').style.display = 'none';
     document.querySelector('.hero-section').style.display = 'none';
-}, 5000);
+}, 2000);

@@ -39,18 +39,40 @@
         <h2>Notice</h2>
     </div>
    </div>
-<div class="content">
-    <h2>Examination Notice</h2>
-    <p class="published-date">
-        <img src="/images/time.png" alt="Time"> 
-        6 December, 2024
-    </p>
-    <hr>
-    <p class="date">8 December 2024</p>
-    <p>This is examination notice</p>
-    <a href="" download="">Download routine</a>
+
+   <div class="upload">
+    <button id="uploadNoticeBtn">Upload Notice</button>
 </div>
+
+<div class="notice-list" id="noticeList"></div>
+
+<!-- Popup Form -->
+<div class="overlay" id="overlay"></div>
+<div class="popup" id="popup">
+    <h2>Upload New Notice</h2>
+
+    <select id="headingSelect">
+        <option value="h1">H1</option>
+        <option value="h2">H2</option>
+        <option value="h3">H3</option>
+        <option value="h4">H4</option>
+        <option value="h5">H5</option>
+        <option value="h6">H6</option>
+    </select>
+
+    <input type="text" id="heading" placeholder="Enter Heading">
+    <textarea id="description" rows="4" placeholder="Enter Description"></textarea>
+    <input type="file" id="imageInput" accept="image/*">
+    
+    <button id="submitNoticeBtn">Submit</button>
+</div>
+
+<div class="fullscreen" id="fullscreen">
+    <button class="close-fullscreen" id="closeFullscreen">Close</button>
+</div>
+
    <script src="/js/hamburger.js"></script>
    <script src="/js/preloader.js"></script>
+   <script src="/js/notice-upload.js"></script>
 </body>
 </html>

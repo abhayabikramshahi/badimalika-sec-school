@@ -104,7 +104,7 @@ marquee:hover{
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20pxfoo;
+    gap: 20px;
 }
 
 .nav-links li {

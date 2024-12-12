@@ -1,7 +1,7 @@
-// Correct password for deletion
-const correctPassword = 'admin123';
+// Correct password for upload
+const correctPasswordForUpload = 'admin123';
 
-// DOM Elements
+// DOM Elements (same as before)
 const uploadNoticeBtn = document.getElementById('uploadNoticeBtn');
 const popup = document.getElementById('popup');
 const overlay = document.getElementById('overlay');
@@ -14,27 +14,30 @@ const noticeList = document.getElementById('noticeList');
 const fullscreen = document.getElementById('fullscreen');
 const closeFullscreen = document.getElementById('closeFullscreen');
 
-// Load notices from localStorage and display them
+// Load notices from Firebase and display them
 const loadNotices = () => {
-    const notices = JSON.parse(localStorage.getItem('notices')) || [];
-    noticeList.innerHTML = ''; // Clear existing notices
+    const noticesRef = db.ref('notices');
+    noticesRef.once('value', (snapshot) => {
+        const notices = snapshot.val() || [];
+        noticeList.innerHTML = ''; // Clear existing notices
 
-    notices.forEach((notice, index) => {
-        const noticeDiv = document.createElement('div');
-        noticeDiv.classList.add('notice');
-        noticeDiv.innerHTML = `
-            <${notice.tag}>${notice.heading}</${notice.tag}>
-            <img src="${notice.image}" alt="Notice Image" class="notice-image">
-            <p>${notice.description}</p>
-            <button class="delete-btn" onclick="deleteNotice(${index})">Delete</button>
-        `;
-        
-        noticeDiv.querySelector('img').addEventListener('click', () => viewFullScreen(notice));
-        noticeList.appendChild(noticeDiv);
+        Object.values(notices).forEach((notice, index) => {
+            const noticeDiv = document.createElement('div');
+            noticeDiv.classList.add('notice');
+            noticeDiv.innerHTML = `
+                <${notice.tag}>${notice.heading}</${notice.tag}>
+                <img src="${notice.image}" alt="Notice Image" class="notice-image">
+                <p>${notice.description}</p>
+                <button class="delete-btn" onclick="deleteNotice(${index})">Delete</button>
+            `;
+            
+            noticeDiv.querySelector('img').addEventListener('click', () => viewFullScreen(notice));
+            noticeList.appendChild(noticeDiv);
+        });
     });
 };
 
-// View notice in full screen
+// View notice in full screen (same as before)
 const viewFullScreen = (notice) => {
     fullscreen.style.display = 'flex';
     fullscreen.innerHTML = `
@@ -44,22 +47,29 @@ const viewFullScreen = (notice) => {
     document.getElementById('closeFullscreenBtn').addEventListener('click', closeFullScreen);
 };
 
-// Close full-screen view
+// Close full-screen view (same as before)
 const closeFullScreen = () => fullscreen.style.display = 'none';
 
-// Delete notice after password verification
+// Delete notice after password verification (same as before)
 const deleteNotice = (index) => {
     const password = prompt('Enter password to delete:');
-    if (password !== correctPassword) return alert('Incorrect password!');
+    if (password !== correctPasswordForUpload) return alert('Incorrect password!');
 
-    const notices = JSON.parse(localStorage.getItem('notices')) || [];
-    notices.splice(index, 1);
-    localStorage.setItem('notices', JSON.stringify(notices));
-    loadNotices();
+    const noticesRef = db.ref('notices');
+    noticesRef.once('value', (snapshot) => {
+        const notices = snapshot.val() || [];
+        const noticeKey = Object.keys(notices)[index];
+
+        // Remove notice from Firebase
+        noticesRef.child(noticeKey).remove().then(() => loadNotices());
+    });
 };
 
-// Submit the notice form
+// Submit the notice form with password protection
 submitNoticeBtn.addEventListener('click', () => {
+    const password = prompt('Enter password to upload notice:');
+    if (password !== correctPasswordForUpload) return alert('Incorrect password!');
+
     const tag = headingSelect.value;
     const heading = headingInput.value.trim();
     const description = descriptionInput.value.trim();
@@ -79,26 +89,26 @@ submitNoticeBtn.addEventListener('click', () => {
             image: reader.result
         };
 
-        const notices = JSON.parse(localStorage.getItem('notices')) || [];
-        notices.push(notice);
-        localStorage.setItem('notices', JSON.stringify(notices));
-        loadNotices();
-        
-        // Close the popup
-        popup.style.display = 'none';
-        overlay.style.display = 'none';
+        const noticesRef = db.ref('notices');
+        const newNoticeRef = noticesRef.push();
+        newNoticeRef.set(notice).then(() => {
+            loadNotices();
+            // Close the popup
+            popup.style.display = 'none';
+            overlay.style.display = 'none';
+        });
     };
 
     reader.readAsDataURL(file);
 });
 
-// Open popup to upload a new notice
+// Open popup to upload a new notice (same as before)
 uploadNoticeBtn.addEventListener('click', () => {
     popup.style.display = 'block';
     overlay.style.display = 'block';
 });
 
-// Close popup when clicking the overlay
+// Close popup when clicking the overlay (same as before)
 overlay.addEventListener('click', () => {
     popup.style.display = 'none';
     overlay.style.display = 'none';
@@ -107,13 +117,12 @@ overlay.addEventListener('click', () => {
 // Initial call to load notices
 loadNotices();
 
-
-// Block right-click menu
+// Block right-click menu (same as before)
 document.addEventListener('contextmenu', function(e) {
     e.preventDefault(); // Disable right-click
 });
 
-// Block F12 (DevTools) key and Ctrl+Shift+I combination
+// Block F12 (DevTools) key and Ctrl+Shift+I combination (same as before)
 document.addEventListener('keydown', function(e) {
     // Block F12 (DevTools) key
     if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
@@ -125,7 +134,7 @@ document.addEventListener('keydown', function(e) {
     }
 });
 
-// Detect and prevent the opening of devtools
+// Detect and prevent the opening of devtools (same as before)
 (function() {
     var devtoolsOpen = false;
     var threshold = 160;
@@ -142,3 +151,26 @@ document.addEventListener('keydown', function(e) {
         }
     }, 1000);
 })();
+
+
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDdOmPq1Mtp0Iu8gXsyfHhAdgKPSvMwBIU",
+    authDomain: "website-shower.firebaseapp.com",
+    projectId: "website-shower",
+    storageBucket: "website-shower.firebasestorage.app",
+    messagingSenderId: "409554350070",
+    appId: "1:409554350070:web:8a6e2476750b27e24da1d7",
+    measurementId: "G-6BH7HHVBL4"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);

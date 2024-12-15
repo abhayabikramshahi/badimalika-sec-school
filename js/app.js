@@ -1,22 +1,23 @@
+// Get modal elements
+const modal = document.getElementById("fullscreen-modal");
+const img = document.getElementById("notice-image");
+const modalImg = document.getElementById("fullscreen-img");
+const closeBtn = document.querySelector(".close-btn");
 
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+// Show modal when image is clicked
+img.addEventListener("click", () => {
+    modal.style.display = "flex";
+    modalImg.src = img.src;
+});
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyDdOmPq1Mtp0Iu8gXsyfHhAdgKPSvMwBIU",
-    authDomain: "website-shower.firebaseapp.com",
-    projectId: "website-shower",
-    storageBucket: "website-shower.firebasestorage.app",
-    messagingSenderId: "409554350070",
-    appId: "1:409554350070:web:8a6e2476750b27e24da1d7",
-    measurementId: "G-6BH7HHVBL4"
-  };
+// Close modal when close button is clicked
+closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+});
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
+// Close modal when user clicks outside the image
+modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+});

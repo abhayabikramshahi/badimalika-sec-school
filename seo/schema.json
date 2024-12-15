@@ -9,7 +9,7 @@
         "addressCountry": "Nepal"
     },
     "description": "Badimalika Secondary School provides quality education to students in Raskot, Kalikot, Nepal. The school is soon launching its official website for better engagement with students and parents.",
-    "url": "https://www.yourschoolwebsite.com",
+    "url": "https://badimalikasecschool.netlify.app/",
     "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+977-9758900824",

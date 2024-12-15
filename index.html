@@ -18,70 +18,44 @@
     <link rel="icon" href="images/favicon.jpg" type="image/x-icon">
 
     <meta name="google-adsense-account" content="ca-pub-8594835989766649">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-   
-    <!-- <div id="popup-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <img src="/images/logo-main.png" class="img-pop" alt="Pop-up Content" style="width: 100%;">
-            <!-- <p>Welcome to Glen Buds Secondary School!</p> -->
-        </div>
-    </div>
-    <div class="preloader">
-        <img src="/471f74d9-7a7c-4024-82b7-251a5aba58a3.jpg" alt="School Logo">
-    </div>
-    <div class="top-navbar">
-        <div class="icons">
-            <script>console.log('Rendering social media icons');</script>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            <hr>
-            <div class="btn-header">
-                <script>console.log('Rendering Virtual Tour button');</script>
-                <a href="#">Admission open</a>
-            </div>
+    <div class="Navbar">
+        <div class="logo">
+            <h2>Badimalika</h2>
         </div>
     
-        <div class="nav-ul">
-            <script>console.log('Rendering navigation menu');</script>
+        <!-- Navigation items -->
+        <div class="items">
             <ul>
-                <li><script>console.log('Rendering Downloads link');</script><a href="#">Downloads</a></li>
-                <li><script>console.log('Rendering Work with us link');</script><a href="/pages/contact/co.html">Work with us <span class="badge">new</span></a></li>
-                <li><script>console.log('Rendering Blogs link');</script><a href="/blog/attention.html">Blogs</a></li>
-                <li><script>console.log('Rendering Notice link');</script><a href="/slide-notice/1/exam.html">Notice</a></li>
-                <li><script>console.log('Rendering News & Events link');</script><a href="#">News & Events <span class="badge">new</span></a></li>
-                
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Notices</a></li>
+                <li><a href="#">Vacancy</a></li>
+                <li><a href="#">Achievements</a></li>
             </ul>
+            
         </div>
-    </div>
-    <div class="navbar">
-        <div class="logo">
-            <a href="/index.html" class="a">
-                <img src="471f74d9-7a7c-4024-82b7-251a5aba58a3.jpg" alt="School Logo">
-            </a>
+        <div class="button-navbar">
+            <button>Contact Us</button>
         </div>
-        <div class="hamburger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
+        <!-- Hamburger icon (visible only on mobile) -->
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-        <ul class="nav-links">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/pages/about-us/about.html">About Us</a></li>
-            <li><a href="/pages/Team/team.html">Team</a></li>
-            <li><a href="/slide-notice/1/exam.html">Notice</a></li>
-            <li><a href="/pages/vacancy/vacancy.html">Vacancy</a></li>
-            <li><a href="/blog/attention.html">Blog</a></li>
-            <li><a href="/pages/contact/co.html">Contact Us</a></li>
-        </ul>
     </div>
 
     <div class="slider-container">
-       
+        <!-- Slides -->
         <div class="slide active">
             <img src="images/slide-1.png" alt="Image 1">
         </div>
@@ -92,11 +66,15 @@
             <img src="images/slide-3.png" alt="Image 3">
         </div>
         <div class="slide">
-            <img src="images/slide4.png alt="Image 4">
-        </div> 
-  
-
-
+            <img src="images/slide-4.png" alt="Image 4">
+        </div>
+    
+        <!-- Navigation Buttons -->
+        <div class="navigation">
+            <button id="prev">❮</button>
+            <button id="next">❯</button>
+        </div>
+    
         <!-- Dots for Navigation -->
         <div class="dots">
             <span class="dot active"></span>
@@ -105,67 +83,62 @@
             <span class="dot"></span>
         </div>
     </div>
-
-    <div class="row">
-        <div class="col-lg-1">
-            <strong>NOTICE :</strong>
-        </div>
-        <div class="col-lg-11">
-            <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
-                <a href="/slide-notice/1/exam.html">
-                    <p>Examation Result announce</p>
-                </a>
-            </marquee>
-        </div>
-    </div>
-    <div class="about-us">
-        <div class="txt">
-            <h1>About Us:</h1>
-            <hr>
-            <p>Badimalika Secondary School, Raskot Municipality, Kalikot, Nepal, is one of the renowned community schools that offers a range of academic programs. The school runs 10+2 level programs in disciplines such as Education, Humanities, Management, Agriculture, and Animal Science</p>
-            <div class="btn">
-                <button id="moree">Learn More</button>
-            </div>
-        </div>
-    </div>
-     <div class="wrap-update">
-        <div class="latest-update">
-            <div class="title-latest-update">
-               
-               <p>Notice board - Index page</p>
-               <hr class="hori">
-               
-            </div>
-            <div class="des">
-               
-                <div class="result">
-                    <img src="images/book-main.png" alt="Result">
-                    <p>Visit Result Page only for prototype. <a href="/s/result-notice/r-n.html">Visit</a></p>
-                </div>
-                <hr class="hori">
-                <div class="annual_function">
-                    <p>Annual Function on Push 1</p>
-                </div>
-            </div>
-         </div>
-     </div>
-  
-    <script type="application/ld+json" src="schema.json"></script>
     
-    <div class="imp">
+    <div class="scolar-ship">
+        <div class="RHS">
+            <h1>Badimalika Secondary School</h1>
+            <div class="button-scolarship">
+                <button>Apply Here</button>
+            </div>
+        </div>
 
-        <script src="preloader.js"></script>
-        <script src="js/slider.js"></script>
-        <script src="js/hamburger.js"></script>
-        <script src="js/popup.js"></script>
-        <script src="/js/button.js"></script>
-        <script src="js/preloader.js"></script>
+        <div class="LHS">
+            <button>100% Scholarship</button>
+        </div>
     </div>
-  
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8594835989766649"
-     crossorigin="anonymous"></script>
+    <div class="sepration">
 
-     <script>console.log('Page loaded successfully');</script>
+    </div>
+
+    <div class="message-principal">
+       <div class="said">
+        <hr class="said">
+       </div>
+        <div class="title-Principal">
+            <h2>
+                Message From Principal
+            </h2>
+        </div>
+      <div class="imppp">
+        <div class="LHS-PRINCIPAL">
+            <p class="description">
+                "Being the principal of Badimalika, my mission is inspired by the desire to offer quality, inclusive education to all children, particularly the vulnerable ones. I work with the aim of making an English-Medium educational facility that will serve students from my district and outside the district. Partnering with NGOs, we have helped reduce dropout rates and return students to school by addressing issues such as child marriage and poverty. I want parents to appreciate the value of education in the life of a child and use it for the benefit of the child’s future. All children have a right to learn, and that’s what I stand for."
+
+
+            </p>
+        </div>
+        <div class="RHS-PRINCIPAL">
+            <img src="/images/principal.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="sepration">
+
+    </div>
+    <div class="student-thoughts">
+        <div class="said">
+            <hr class="said">
+           </div>
+           <div class="title-students">
+            <h2>Hear What Our Student Have To Say</h2>
+           </div>
+         
+        
+    </div>
+
+    <script src="/js/hamburger.js"></script>
+    <script src="/js/slider.js"></script>
+
 </body>
 
 </html>

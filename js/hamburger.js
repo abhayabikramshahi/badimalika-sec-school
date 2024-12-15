@@ -1,9 +1,7 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const hamburger = document.querySelector(".hamburger-menu");
-    const navLinks = document.querySelector(".nav-links");
+    const hamburger = document.querySelector('.hamburger');
+    const items = document.querySelector('.items');
 
-    hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("active");
-        navLinks.classList.toggle("show");
+    // Toggle visibility of menu on click
+    hamburger.addEventListener('click', () => {
+        items.classList.toggle('active');
     });
-});

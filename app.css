@@ -266,6 +266,9 @@ hr.said {
     text-align: center;
     font-size: 21px;
     padding: 19px 0;
+    display: flex
+;
+    justify-content: center;
 }
 .imppp {
     display: flex
@@ -286,4 +289,53 @@ p.description {
     border-radius: 8px;
     max-width: 300px;
     object-fit: cover;
+}
+.title-students {
+    text-align: center;
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+}
+h2 {
+    width: 21rem;
+}
+.content-desciription {
+    display: flex
+;
+    justify-content: space-between;
+    border: 1px solid #cccc;
+    padding: 40px 27px;
+}
+.rhs-students img {
+    height: 288.3px;
+    border-radius: 12px;
+}
+.name h2 {
+    font-size: 29px;
+    width: 100%;
+}
+.description {
+    width: 53rem;
+    padding: 25px 0;
+}
+.description p {
+    font-size: 17px;
+    line-height: 29px;
+}
+@media screen and (max-width: 768px) {
+    .content-desciription {
+        display: flex
+    ;
+        justify-content: space-between;
+        border: 1px solid #cccc;
+        padding: 40px 27px;
+        flex-direction: column;
+    }
+    .description {
+        width: 90%;
+    }
+    .rhs-students img{
+        width: 100%;
+        object-fit: cover;
+    }
 }

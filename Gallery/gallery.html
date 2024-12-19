@@ -42,11 +42,31 @@
     <div class="banner">
         <h1>Gallery</h1>
     </div>
-    <div class="warning">
-        <p>Comming Soon!</p>
-    </div>
+    <div class="gallery-container">
+        <div class="gallery-item" onclick="showFullscreen('/images/slide-1.png')">
+          <img src="/images/slide-1.png" alt="Image 1">
+        </div>
+        <div class="gallery-item" onclick="showFullscreen('/images/slide-3.png')">
+          <img src="/images/slide-3.png" alt="Image 2">
+        </div>
+        <div class="gallery-item" onclick="showFullscreen('/images/slide-2.png')">
+            <img src="/images/slide-2.png" alt="Image 2">
+          </div>
+          <div class="gallery-item" onclick="showFullscreen('/images/slide-4.png')">
+            <img src="/images/slide-4.png" alt="Image 2">
+          </div>
+        <!-- Add more gallery items as needed -->
+      </div>
+      
+      <!-- Fullscreen Image Viewer -->
+      <div id="fullscreenViewer" class="fullscreen-viewer" onclick="closeFullscreen()">
+        <img id="fullscreenImage" src="" alt="Fullscreen View">
+      </div>
+      
+      
     <script src="/js/hamburger.js"></script>
     <script src="/js/button.js"></script>
+    <script src="/js/image-full.js"></script>
 
 </body>
 </html>

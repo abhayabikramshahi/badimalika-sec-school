@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Scholarship</title>
+    <link rel="stylesheet" href="Scholarship.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Apply for Scholarship</h1>
+    </div>
+    <!-- Send the form data to submit.html using GET method -->
+    <form action="submit.html" method="GET">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br>
+      
+      <label for="family-status">Status of your family condition:</label><br>
+      <input type="text" id="family-status" name="family_status" required><br>
+      
+      <label for="age">Age:</label><br>
+      <input type="number" id="age" name="age" required><br>
+      
+      <label for="address">Address:</label><br>
+      <input type="text" id="address" name="address" required><br>
+      
+      <button type="submit">Apply</button>
+    </form>
+</body>
+</html>

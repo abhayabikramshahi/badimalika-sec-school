@@ -339,3 +339,26 @@ h2 {
         object-fit: cover;
     }
 }
+.content-box {
+    padding: 12px;
+}
+.navbar-header {
+    display: flex
+;
+    justify-content: space-between;
+    padding: 7px 25px;
+    align-items: center;
+    text-align: center;
+}
+.icons {
+    display: flex
+;
+    gap: 11px;
+}
+.login {
+    display: flex
+;
+    align-items: center;
+    gap: 6px;
+}
+

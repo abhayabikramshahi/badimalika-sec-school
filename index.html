@@ -55,169 +55,279 @@
             </script>
 
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdn.tailwindcss.com"></script>
             
 </head>
 
-<body>
-    <header>
-        <div class="head">
-            <div class="navbar-header">
-                <div class="icons">
-                    <div class="facebook">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
-                      </div>
-                      <div class="x">
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                      </div>
-                     <hr class="sep">
-                </div>
-                <div class="slogan">
-                    <p>We provide quality education to your childrens.</p>
-                </div>
-                <div class="login">
-                    <i class="fa-solid fa-right-to-bracket"></i>
-                    <a href="#">Admin Login</a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <div class="Navbar">
-        <div class="logo">
-            <h1>Badimalika</h1>
-        </div>
-    
-        <!-- Navigation items -->
-        <div class="items">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us/about.html">About Us</a></li>
-                <li><a href="/Gallery/gallery.html">Gallery</a></li>
-                <li><a href="/notice/nottice.html">Notices</a></li>
-                <li><a href="/Vacancy/Vacancy.html">Vacancy</a></li>
-                <li><a href="/Achievements/Achievements.html">Achievements</a></li>
-            </ul>
-            
-        </div>
-        <div class="button-navbar">
-            <button id="main">Contact Us</button>
-        </div>
-        <!-- Hamburger icon (visible only on mobile) -->
-        <div class="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-
-    <div class="slider-container">
-        <!-- Slides -->
-        <div class="slide active">
-            <img src="images/slide-1.png" alt="Image 1">
-        </div>
-        <div class="slide">
-            <img src="images/slide-2.png" alt="Image 2">
-        </div>
-        <div class="slide">
-            <img src="images/slide-3.png" alt="Image 3">
-        </div>
-        <div class="slide">
-            <img src="images/slide-4.png" alt="Image 4">
-        </div>
-    
-        <!-- Navigation Buttons -->
-        <div class="navigation">
-            <button id="prev">❮</button>
-            <button id="next">❯</button>
-        </div>
-    
-        <!-- Dots for Navigation -->
-        <div class="dots">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-    </div>
-    
-    <section>
-        <div class="scolar-ship">
-            <div class="RHS">
-                <h2>Badimalika Secondary School</h2>
-                <div class="button-scolarship">
-                    <button>Apply Here</button>
-                </div>
+<body class="bg-gray-100">
+    <nav class="bg-blue-500 text-white shadow">
+        <div class="container mx-auto px-4">
+          <div class="flex justify-between items-center py-4">
+            <!-- Logo -->
+            <div class="text-2xl font-bold">
+              <a href="#" class="hover:text-gray-200">Badimalika</a>
             </div>
     
-            <div class="LHS">
-                <button>100% Scholarship</button>
-            </div>
-        </div>
-    </section>
-    <div class="sepration">
-
-    </div>
-
-   <main>
-    <div class="message-principal">
-        <div class="said">
-         <hr class="said">
-        </div>
-         <div class="title-Principal">
-            <h2>Message From Principal</h2>
-
-         </div>
-       <div class="imppp">
-         <div class="LHS-PRINCIPAL">
-             <p class="description">
-                 "Being the principal of Badimalika, my mission is inspired by the desire to offer quality, inclusive education to all children, particularly the vulnerable ones. I work with the aim of making an English-Medium educational facility that will serve students from my district and outside the district. Partnering with NGOs, we have helped reduce dropout rates and return students to school by addressing issues such as child marriage and poverty. I want parents to appreciate the value of education in the life of a child and use it for the benefit of the child’s future. All children have a right to learn, and that’s what I stand for."
- 
- 
-             </p>
-         </div>
-         <div class="RHS-PRINCIPAL">
-            <img src="images/principal.jpg" loading="lazy" alt="Principal of Badimalika Secondary School in Raskot, Kalikot">
-         </div>
-       </div>
-     </div>
-   </main>
-    <div class="sepration">
-
-    </div>
-   <main class="students">
-    <div class="student-thoughts">
-        <div class="said">
-            <hr class="said">
-           </div>
-           <div class="title-students">
-            <h2>Hear What Our Student Have To Say</h2>
-           </div>
-          <div class="box">
-            <div class="content-box">
-                <div class="content-desciription">
-                    <div class="Lhs-students">
-                        <div class="name">
-                            <h2>Abhaya Bikram Shahi <sup>9th</sup></h2>
-                        </div>
-                        <div class="description">
-                           <p>
-                            "Being a part of Badimalika Secondary School has been a transformative journey for me. The school's commitment to practical learning and technological advancement has shaped my skills and inspired my passion for programming. From the supportive teachers to the well-rounded curriculum, every aspect of the school contributed to my growth. The launch of the school's new website is a testament to its forward-thinking approach. I am proud to be associated with an institution that values innovation and prepares students for the challenges of the modern world."
-                           </p>
-                        </div>
-                    </div>
-                    <div class="rhs-students">
-                        <img src="/uploads-students/abhaya.jpg" loading="lazy" alt="">
-                    </div>
+            <!-- Center Menu Items -->
+            <div class="hidden md:flex space-x-6">
+              <a href="#" class="hover:text-gray-200">Home</a>
+              <a href="#" class="hover:text-gray-200">About</a>
+    
+              <!-- Dropdown -->
+              <div class="relative">
+                <button
+                  id="dropdown-btn"
+                  class="hover:text-gray-200 focus:outline-none"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Services
+                </button>
+                <!-- Dropdown Menu -->
+                <div
+                  id="dropdown-menu"
+                  class="absolute hidden bg-white text-gray-700 shadow-lg rounded mt-2 w-40"
+                  aria-label="submenu"
+                >
+                  <a href="#" class="block px-4 py-2 hover:bg-blue-100">Service 1</a>
+                  <a href="#" class="block px-4 py-2 hover:bg-blue-100">Service 2</a>
+                  <a href="#" class="block px-4 py-2 hover:bg-blue-100">Service 3</a>
                 </div>
+              </div>
+    
+              <a href="#" class="hover:text-gray-200">Contact</a>
+            </div>
+    
+            <!-- Right Side Button -->
+            <div class="hidden md:block">
+              <button class="bg-white text-blue-500 px-4 py-2 rounded hover:bg-gray-200">
+                Get Started
+              </button>
+            </div>
+    
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+              <button id="menu-btn" class="focus:outline-none">
+                <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+              </button>
             </div>
           </div>
+    
+          <!-- Mobile Menu -->
+          <div id="mobile-menu" class="hidden md:hidden bg-blue-500">
+            <a href="#" class="block py-2 px-4 hover:bg-blue-600">Home</a>
+            <a href="#" class="block py-2 px-4 hover:bg-blue-600">About</a>
+            <a href="#" class="block py-2 px-4 hover:bg-blue-600">Services</a>
+            <a href="#" class="block py-2 px-4 hover:bg-blue-600">Contact</a>
+            <button class="block bg-white text-blue-500 w-full px-4 py-2 mt-2 rounded hover:bg-gray-200">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="h-screen bg-cover bg-center" style="background-image: url('/uploads/hero-backend.jpg');">
+        <!-- Overlay -->
+        <div class="flex items-center justify-center h-full text-white bg-black bg-opacity-50">
+          <div class="text-center space-y-6 px-4">
+            <!-- Heading -->
+            <h1 class="text-4xl md:text-5xl font-bold">
+              Welcome to Badimalika Secondary School
+            </h1>
+            <!-- Subheading -->
+            <p class="text-lg md:text-xl">
+              Empowering the next generation through quality education and digital innovation.
+            </p>
+            <!-- Buttons -->
+            <div class="flex justify-center space-x-4">
+              <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold shadow transition">
+                Join Us
+              </a>
+              <a href="#" class="bg-gray-100 hover:bg-gray-200 text-gray-800 px-6 py-3 rounded-lg font-semibold shadow transition">
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="bg-cyan-400 py-16">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+          <!-- Text Content -->
+          <div class="text-center md:text-left mb-8 md:mb-0">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+              Badimalika Secondary School
+            </h2>
+            <p class="text-lg text-gray-700 mt-2">
+              Apply now to unlock 100% scholarship opportunities for bright futures!
+            </p>
+            <a href="#apply" class="inline-block bg-gradient-to-r from-purple-500 to-blue-500 text-white px-6 py-3 mt-6 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transform transition">
+              Apply Here
+            </a>
+          </div>
+      
+          <!-- Call-to-Action Button -->
+          <div>
+            <a
+              href="#scholarship-details"
+              class="inline-block bg-gradient-to-r from-orange-400 via-pink-500 to-red-500 text-white text-lg font-bold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transform transition"
+            >
+              100% Scholarship
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="bg-blue-100 p-6 rounded-lg shadow-md w-full max-w-full mx-auto flex items-center space-x-6">
+        <img src="/images/principal.jpg" alt="Principal" class="w-24 h-24 rounded-full object-cover">
+        <div class="text-gray-700">
+          <h1 class="text-2xl font-semibold text-gray-800 mb-4">Message from the Principal</h1>
+          <p class="leading-relaxed mb-4">
+            Dear Students, Parents, and Staff,
+          </p>
+          <p class="leading-relaxed mb-4">
+            It is with great pleasure that I welcome you all to another exciting academic year at Badimalika Secondary School. As we continue our commitment to excellence in education, we are proud to provide an environment that fosters both personal and academic growth. Our staff is dedicated to supporting each student's unique journey, and we encourage all of you to aim for the highest standards in both learning and character.
+          </p>
+          <p class="leading-relaxed mb-4">
+            Together, let’s work towards building a brighter future for our community. Thank you for your continued trust and support.
+          </p>
+          <p class="font-semibold">
+            Sincerely, <br>
+            Pushpa Raj Baral<br>
+            Principal, Badimalika Secondary School
+          </p>
+        </div>
+      </div>
+      <div class="bg-gray-100 p-8 rounded-lg shadow-md w-full max-w-full mx-auto">
+        <h2 class="text-3xl font-semibold text-center text-gray-800 mb-6">Hear What Our Students Have To Say</h2>
         
-    </div>
-   </main>
-
-
-    <script src="/js/hamburger.js"></script>
-    <script src="/js/slider.js"></script>
-    <script src="/js/button.js"></script>
+        <div class="flex flex-wrap justify-center gap-8">
+          <!-- Student 1 -->
+          <div class="bg-white p-6 rounded-lg shadow-md w-full md:w-1/3">
+            <img src="uploads-students/abhaya.jpg" alt="Student 1" class="w-20 h-20 rounded-full object-cover mx-auto mb-4">
+            <p class="text-gray-700 text-center italic mb-4">
+              "Badimalika Secondary School has given me a place to grow academically and personally. The teachers are supportive, and the environment is nurturing."
+            </p>
+            <p class="text-center font-semibold text-gray-800">Abhaya</p>
+          </div>
+          
+          <!-- Student 2 -->
+          <div class="bg-white p-6 rounded-lg shadow-md w-full md:w-1/3">
+            <img src="uploads-students/suppu.jpg" alt="Student 2" class="w-20 h-20 rounded-full object-cover mx-auto mb-4">
+            <p class="text-gray-700 text-center italic mb-4">
+              "I am proud to be part of this school. The extracurricular activities and the sense of community here have really helped me develop my skills."
+            </p>
+            <p class="text-center font-semibold text-gray-800">Supriya</p>
+          </div>
+          
+          
+        </div>
+      </div>
+      <footer class="bg-blue-800 text-white py-8">
+        <div class="max-w-screen-xl mx-auto px-6 md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+            <h3 class="text-2xl font-semibold">Badimalika Secondary School</h3>
+            <p class="text-gray-300 mt-2">Committed to Excellence in Education</p>
+          </div>
+          
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+            <div>
+              <h4 class="font-semibold mb-2">Quick Links</h4>
+              <ul class="text-gray-300">
+                <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+                <li><a href="about-us/about.html" class="hover:text-yellow-300">About</a></li>
+                <li><a href="#" class="hover:text-yellow-300">Admissions</a></li>
+                <li><a href="#" class="hover:text-yellow-300">Contact</a></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 class="font-semibold mb-2">Academics</h4>
+              <ul class="text-gray-300">
+                <li><a href="#" class="hover:text-yellow-300">Curriculum</a></li>
+                <li><a href="#" class="hover:text-yellow-300">Departments</a></li>
+                <li><a href="#" class="hover:text-yellow-300">Faculty</a></li>
+                <li><a href="#" class="hover:text-yellow-300">Results</a></li>
+              </ul>
+            </div>
+      
+            <div>
+              <h4 class="font-semibold mb-2">Resources</h4>
+              <ul class="text-gray-300">
+                <li><a href="#" class="hover:text-yellow-300">Library</a></li>
+                <li><a href="#" class="hover:text-yellow-300">E-learning</a></li>
+                <li><a href="#" class="hover:text-yellow-300">Student Portal</a></li>
+              </ul>
+            </div>
+      
+            <div>
+              <h4 class="font-semibold mb-2">Connect With Us</h4>
+              <ul class="text-gray-300">
+                <li><a href="#" class="hover:text-yellow-300">Facebook</a></li>
+                <li><a href="#" class="hover:text-yellow-300">Instagram</a></li>
+                <li><a href="#" class="hover:text-yellow-300">Twitter</a></li>
+                <li><a href="#" class="hover:text-yellow-300">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+        <div class="text-center py-4 text-gray-300">
+          <p>&copy; 2024 Badimalika Secondary School. All rights reserved.</p>
+        </div>
+      </footer>
+      
+    
+      <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+    
+        // Dropdown toggle for accessibility
+        const dropdownBtn = document.getElementById('dropdown-btn');
+        const dropdownMenu = document.getElementById('dropdown-menu');
+    
+        dropdownBtn.addEventListener('click', () => {
+          const isExpanded = dropdownBtn.getAttribute('aria-expanded') === 'true';
+          dropdownBtn.setAttribute('aria-expanded', !isExpanded);
+          dropdownMenu.classList.toggle('hidden');
+        });
+    
+        dropdownBtn.addEventListener('keydown', (e) => {
+          if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            dropdownMenu.querySelector('a').focus();
+          }
+        });
+    
+        dropdownMenu.addEventListener('keydown', (e) => {
+          const focusableItems = dropdownMenu.querySelectorAll('a');
+          const currentIndex = Array.from(focusableItems).indexOf(document.activeElement);
+    
+          if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            const nextIndex = (currentIndex + 1) % focusableItems.length;
+            focusableItems[nextIndex].focus();
+          }
+    
+          if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            const prevIndex = (currentIndex - 1 + focusableItems.length) % focusableItems.length;
+            focusableItems[prevIndex].focus();
+          }
+    
+          if (e.key === 'Escape') {
+            dropdownBtn.focus();
+            dropdownMenu.classList.add('hidden');
+            dropdownBtn.setAttribute('aria-expanded', 'false');
+          }
+        });
+      </script>
 
 </body>
 

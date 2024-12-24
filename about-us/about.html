@@ -11,98 +11,200 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
         <link rel="icon" href="/471f74d9-7a7c-4024-82b7-251a5aba58a3.jpg" type="image/x-icon">
+        <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <div class="Navbar">
-        <div class="logo">
-            <h1>Badimalika</h1>
-        </div>
-
-        <!-- Navigation items -->
-        <div class="items">
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/about-us/about.html">About Us</a></li>
-                <li><a href="/Gallery/gallery.html">Gallery</a></li>
-                <li><a href="#">Notices</a></li>
-                <li><a href="#">Vacancy</a></li>
-                <li><a href="/Achievements/Achievements.html">Achievements</a></li>
-            </ul>
-
-        </div>
-        <div class="button-navbar">
-            <button id="main">Contact Us</button>
-        </div>
-        <!-- Hamburger icon (visible only on mobile) -->
-        <div class="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-    <div class="header">
-        <h1>About Us</h1>
-    </div>
-
-
-    <div class="about">
-        <div class="title">
-            <h2>About Our School</h2>
-        </div>
-        <div class="lhs">
-            <p>
-                Badimalika Secondary School is a public academic institution located in Syuna, Raskot, Kalikot, Karnali
-                Province, Nepal. It is affiliated with the National Examinations Board (NEB) and the Council for
-                Technical Education and Vocational Training (CTEVT). The school offers Ten Plus Two (10+2) programs in
-                Humanities, Management, Education, and Agriculture streams. It also provides vocational training
-                programs like JTA (Junior Technical Assistant) in Plant Science, which admits 40 students each year. The
-                medium of instruction is both English and Nepali, ensuring accessibility for local and national
-                students.
-            </p>
-            <p>The school aims to provide affordable education with a focus on quality learning and practical skills. It
-                offers scholarship opportunities based on merit and quota systems to support underprivileged students.
-                Students seeking admission to the Ten Plus Two programs must have completed their Secondary Education
-                Examination (SEE) with a minimum GPA of 1.6.</p>
-            <p>In addition to its academic offerings, Badimalika Secondary School maintains a student-friendly
-                environment with facilities that support technical, vocational, and academic growth. The school is
-                dedicated to fostering an inclusive learning atmosphere that empowers students to achieve academic
-                success and develop skills relevant to their future careers.</p>
-        </div>
-    </div>
-    <div class="choose">
-        <div class="said">
-            <hr>
-        </div>
-        <div class="title">
-            <h2>Why Choose Our School</h2>
-        </div>
-        <div class="choose-main">
-            <p class="des">
-                Choosing Badimalika Secondary School offers several advantages for students aiming to receive quality education in a supportive environment. Here are some key reasons to consider:
-            </p>
-            <div class="qstn">
-                <p>Comprehensive Educational Offerings</p>
+<body class="bg-gray-100">
+    <nav class="bg-blue-500 text-white shadow">
+        <div class="container mx-auto px-4">
+          <div class="flex justify-between items-center py-4">
+            <!-- Logo -->
+            <div class="text-2xl font-bold">
+              <a href="#" class="hover:text-gray-200">Badimalika</a>
             </div>
-            <p class="des">
-                Badimalika Secondary School provides a wide range of programs, including Ten Plus Two courses in Humanities, Management, Education, and Agriculture, as well as vocational training like JTA in Plant Science. These programs are affiliated with recognized bodies like the National Examinations Board (NEB) and Council for Technical Education and Vocational Training (CTEVT), ensuring students receive recognized qualifications
-            </p>
-            <div class="qstn">
-                <p>Affordable and Accessible Education</p>
+    
+            <!-- Center Menu Items -->
+            <div class="hidden md:flex space-x-6">
+              <a href="/index.html" class="hover:text-gray-200">Home</a>
+              <a href="/about-us/about.html" class="hover:text-gray-200">About</a>
+              <a href="/backend-school/contact.php" class="hover:text-gray-200">Contact</a>
+    
+              <!-- Dropdown -->
+              <div class="relative">
+                <button
+                  id="dropdown-btn"
+                  class="hover:text-gray-200 focus:outline-none"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Moree
+                </button>
+                <!-- Dropdown Menu -->
+                <div
+                  id="dropdown-menu"
+                  class="absolute hidden bg-white text-gray-700 shadow-lg rounded mt-2 w-40"
+                  aria-label="submenu"
+                >
+                  <a href="#" class="block px-4 py-2 hover:bg-blue-100">Notices</a>
+                  <a href="#" class="block px-4 py-2 hover:bg-blue-100">Vacancy</a>
+                  <a href="#" class="block px-4 py-2 hover:bg-blue-100">Teacher</a>
+                  <a href="#" class="block px-4 py-2 hover:bg-blue-100">Students</a>
+                </div>
+              </div>
+    
+            
             </div>
-            <p class="des">The school maintains a moderate fee structure and offers scholarship opportunities based on merit and quotas, making education accessible to a wide range of students. This ensures that deserving students from all backgrounds can pursue their educational goals without financial barriers</p>
-
-            <div class="qstn">
-                <p>A Holistic and Supportive Environment
-                </p>
+    
+            <!-- Right Side Button -->
+            <div class="hidden md:block">
+              <button class="bg-white text-blue-500 px-4 py-2 rounded hover:bg-gray-200">
+                Get Started
+              </button>
             </div>
-            <p class="des">
-                The school provides a student-friendly environment that supports both academic excellence and personal growth. With its focus on technical skills, vocational training, and a strong academic foundation, Badimalika Secondary School prepares students not only for exams but for real-world challenges. Students also benefit from a balanced approach to learning that integrates both theoretical knowledge and practical skills
-            </p>
+    
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+              <button id="menu-btn" class="focus:outline-none">
+                <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+    
+          <!-- Mobile Menu -->
+          <div id="mobile-menu" class="hidden md:hidden bg-blue-500">
+            <a href="/index.html" class="block py-2 px-4 hover:bg-blue-600">Home</a>
+            <a href="#" class="block py-2 px-4 hover:bg-blue-600">About</a>
+            <a href="#" class="block py-2 px-4 hover:bg-blue-600">Services</a>
+            <a href="#" class="block py-2 px-4 hover:bg-blue-600">Contact</a>
+            <button class="block bg-white text-blue-500 w-full px-4 py-2 mt-2 rounded hover:bg-gray-200">
+              Get Started
+            </button>
+          </div>
         </div>
-    </div>
-    <script src="/js/hamburger.js"></script>
-    <script src="/js/button.js"></script>
+      </nav>
+
+    
+      </div>
+   
+
+      
+          <!-- Header Section -->
+    <header class="bg-blue-700 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-3xl font-bold">About Us</h1>
+            <p class="text-lg mt-2">Discover the legacy and vision of Badimalika Secondary School</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <!-- Image -->
+                <div>
+                    <img src="/471f74d9-7a7c-4024-82b7-251a5aba58a3.jpg" alt="Badimalika Secondary School" class="rounded-lg shadow-md">
+                </div>
+                <!-- Content -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-4">Welcome to Badimalika Secondary School</h2>
+                    <p class="text-lg mb-4">
+                        Established in 2032 B.S., Badimalika Secondary School has been a beacon of academic excellence and 
+                        holistic development in Nepal. Located amidst the serene surroundings of Kalikot, our school has 
+                        nurtured thousands of young minds with dedication and integrity.
+                    </p>
+                    <h3 class="text-xl font-semibold mb-2">Our Mission</h3>
+                    <p class="text-lg mb-4">
+                        To provide quality education that empowers students to achieve academic success and develop 
+                        essential life skills, preparing them for a bright and prosperous future.
+                    </p>
+                    <h3 class="text-xl font-semibold mb-2">Our Vision</h3>
+                    <p class="text-lg">
+                        We aim to create a nurturing environment where students can excel academically, socially, and 
+                        emotionally, fostering a culture of lifelong learning and leadership.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="bg-gray-200 py-10">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-6">Our Core Values</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Excellence</h3>
+                    <p class="text-gray-600">Striving for academic and personal excellence in every aspect.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Integrity</h3>
+                    <p class="text-gray-600">Fostering honesty, respect, and strong moral principles.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Community</h3>
+                    <p class="text-gray-600">Building a sense of belonging and responsibility among students.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-blue-700 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-lg">&copy; 2024 Badimalika Secondary School. All rights reserved.</p>
+        </div>
+    </footer>
+      <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+    
+        // Dropdown toggle for accessibility
+        const dropdownBtn = document.getElementById('dropdown-btn');
+        const dropdownMenu = document.getElementById('dropdown-menu');
+    
+        dropdownBtn.addEventListener('click', () => {
+          const isExpanded = dropdownBtn.getAttribute('aria-expanded') === 'true';
+          dropdownBtn.setAttribute('aria-expanded', !isExpanded);
+          dropdownMenu.classList.toggle('hidden');
+        });
+    
+        dropdownBtn.addEventListener('keydown', (e) => {
+          if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            dropdownMenu.querySelector('a').focus();
+          }
+        });
+    
+        dropdownMenu.addEventListener('keydown', (e) => {
+          const focusableItems = dropdownMenu.querySelectorAll('a');
+          const currentIndex = Array.from(focusableItems).indexOf(document.activeElement);
+    
+          if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            const nextIndex = (currentIndex + 1) % focusableItems.length;
+            focusableItems[nextIndex].focus();
+          }
+    
+          if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            const prevIndex = (currentIndex - 1 + focusableItems.length) % focusableItems.length;
+            focusableItems[prevIndex].focus();
+          }
+    
+          if (e.key === 'Escape') {
+            dropdownBtn.focus();
+            dropdownMenu.classList.add('hidden');
+            dropdownBtn.setAttribute('aria-expanded', 'false');
+          }
+        });
+      </script>
 
 </body>
 

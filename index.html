@@ -56,283 +56,347 @@
 
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
             <script src="https://cdn.tailwindcss.com"></script>
+            <link rel="stylesheet" href="app.css">
             
 </head>
 
 <body class="bg-gray-100">
-    <nav class="bg-blue-500 text-white shadow">
-        <div class="container mx-auto px-4">
-          <div class="flex justify-between items-center py-4">
-            <!-- Logo -->
-            <div class="text-2xl font-bold">
-              <a href="#" class="hover:text-gray-200">Badimalika</a>
-            </div>
-    
-            <!-- Center Menu Items -->
-            <div class="hidden md:flex space-x-6">
-              <a href="index.html" class="hover:text-gray-200">Home</a>
-              <a href="/about-us/about.html" class="hover:text-gray-200">About</a>
-              <a href="/backend-school/contact.php" class="hover:text-gray-200">Contact</a>
-    
-              <!-- Dropdown -->
-              <div class="relative">
-                <button
-                  id="dropdown-btn"
-                  class="hover:text-gray-200 focus:outline-none"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Moree
-                </button>
-                <!-- Dropdown Menu -->
-                <div
-                  id="dropdown-menu"
-                  class="absolute hidden bg-white text-gray-700 shadow-lg rounded mt-2 w-40"
-                  aria-label="submenu"
-                >
-                  <a href="#" class="block px-4 py-2 hover:bg-blue-100">Notices</a>
-                  <a href="#" class="block px-4 py-2 hover:bg-blue-100">Vacancy</a>
-                  <a href="#" class="block px-4 py-2 hover:bg-blue-100">Teacher</a>
-                  <a href="#" class="block px-4 py-2 hover:bg-blue-100">Students</a>
-                </div>
-              </div>
-    
-            
-            </div>
-    
-            <!-- Right Side Button -->
-            <div class="hidden md:block">
-              <button class="bg-white text-blue-500 px-4 py-2 rounded hover:bg-gray-200">
-                Get Started
-              </button>
-            </div>
-    
-            <!-- Mobile Menu Button -->
-            <div class="md:hidden">
-              <button id="menu-btn" class="focus:outline-none">
-                <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
-              </button>
-            </div>
-          </div>
-    
-          <!-- Mobile Menu -->
-          <div id="mobile-menu" class="hidden md:hidden bg-blue-500">
-            <a href="index.html" class="block py-2 px-4 hover:bg-blue-600">Home</a>
-            <a href="about-us/about.html" class="block py-2 px-4 hover:bg-blue-600">About</a>
-            <a href="/Backend-School/contact.php" class="block py-2 px-4 hover:bg-blue-600">Contact</a>
-            <a href="#" class="block py-2 px-4 hover:bg-blue-600">Results</a>
-            <a href="#" class="block py-2 px-4 hover:bg-blue-600">Teachers</a>
-            <a href="#" class="block py-2 px-4 hover:bg-blue-600">Students</a>
-            <button class="block bg-white text-blue-500 w-full px-4 py-2 mt-2 rounded hover:bg-gray-200">
-              Get Started
-            </button>
-          </div>
-        </div>
-      </nav>
 
-      <div class="h-screen bg-cover bg-center" style="background-image: url('/uploads/hero-backend.jpg');">
-        <!-- Overlay -->
-        <div class="flex items-center justify-center h-full text-white bg-black bg-opacity-50">
-          <div class="text-center space-y-6 px-4">
-            <!-- Heading -->
-            <h1 class="text-4xl md:text-5xl font-bold">
-              Welcome to Badimalika Secondary School
-            </h1>
-            <!-- Subheading -->
-            <p class="text-lg md:text-xl">
-              Empowering the next generation through quality education and digital innovation.
-            </p>
-            <!-- Buttons -->
-            <div class="flex justify-center space-x-4">
-              <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold shadow transition">
-                Join Us
-              </a>
-              <a href="#" class="bg-gray-100 hover:bg-gray-200 text-gray-800 px-6 py-3 rounded-lg font-semibold shadow transition">
-                Learn More
-              </a>
-            </div>
+  <header class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <!-- School Logo -->
+        <div class="flex-shrink-0">
+          <a href="#" class="text-2xl font-extrabold text-blue-600">Badimalika School</a>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="hidden md:flex items-center space-x-6">
+          <div class="flex items-center space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M2.003 5.884L10 10.882l7.997-4.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884zM18 8.118l-8 5-8-5V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+            </svg>
+            <span>info@modernizeschool.edu.np</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm12 4H6v2h8V9z" clip-rule="evenodd" />
+            </svg>
+            <span>+977-123-456789</span>
           </div>
         </div>
       </div>
-      <section class="bg-cyan-400 py-16">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
-          <!-- Text Content -->
-          <div class="text-center md:text-left mb-8 md:mb-0">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
-              Badimalika Secondary School
-            </h2>
-            <p class="text-lg text-gray-700 mt-2">
-              Apply now to unlock 100% scholarship opportunities for bright futures!
-            </p>
-            <a href="#apply" class="inline-block bg-gradient-to-r from-purple-500 to-blue-500 text-white px-6 py-3 mt-6 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transform transition">
-              Apply Here
-            </a>
+    </div>
+  </header>
+
+  <!-- Navbar Section -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Main Navigation -->
+        <div class="hidden md:flex space-x-8">
+          <a href="/index.html" class="hover:text-blue-600 font-medium">Home</a>
+          <a href="/about-us/about.html" class="hover:text-blue-600 font-medium">About Us</a>
+
+          <!-- Academics Dropdown -->
+          <div class="relative group">
+            <button class="flex items-center space-x-1 hover:text-blue-600 font-medium">
+              <span>Academics</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.707a1 1 0 011.414 0L10 11.414l3.293-3.707a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <div class="absolute left-0 mt-2 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+              <a href="/curriculum/curriculum.html" class="block px-4 py-2 hover:bg-gray-100">Curriculum</a>
+              <a href="/faculty/faculty.html" class="block px-4 py-2 hover:bg-gray-100">Faculty</a>
+              <a href="/admission/admission.html" class="block px-4 py-2 hover:bg-gray-100">Admission</a>
+            </div>
           </div>
-      
-          <!-- Call-to-Action Button -->
-          <div>
-            <a
-              href="#scholarship-details"
-              class="inline-block bg-gradient-to-r from-orange-400 via-pink-500 to-red-500 text-white text-lg font-bold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transform transition"
-            >
-              100% Scholarship
-            </a>
+
+          <!-- Activities Dropdown -->
+          <div class="relative group">
+            <button class="flex items-center space-x-1 hover:text-blue-600 font-medium">
+              <span>Activities</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.707a1 1 0 011.414 0L10 11.414l3.293-3.707a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <div class="absolute left-0 mt-2 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+              <a href="/Activities/sports.html" class="block px-4 py-2 hover:bg-gray-100">Sports</a>
+              <a href="/Activities/clubs.html" class="block px-4 py-2 hover:bg-gray-100">Clubs</a>
+              <a href="/Activities/events.html" class="block px-4 py-2 hover:bg-gray-100">Events</a>
+              <a href="/backend-school" class="block px-4 py-2 hover:bg-gray-100">Noties</a>
+              <a href="backend-school/view_vacancies.php" class="block px-4 py-2 hover:bg-gray-100">Vacancy</a>
+              <a href="backend-school/teachers.php" class="block px-4 py-2 hover:bg-gray-100">Teachers</a>
+              <a href="backend-school/students.php" class="block px-4 py-2 hover:bg-gray-100">Students</a>
+            </div>
+          </div>
+
+          <a href="contact/contact.html" class="hover:text-blue-600 font-medium">Contact</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-btn" class="text-gray-800 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+      <a href="/index.html" class="block px-4 py-2 hover:bg-gray-100">Home</a>
+      <a href="/about-us/about.html" class="block px-4 py-2 hover:bg-gray-100">About Us</a>
+      <div class="relative">
+        <button id="mobile-academics-btn" class="w-full flex justify-between px-4 py-2 hover:bg-gray-100">
+          <span>Academics</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M5.293 7.707a1 1 0 011.414 0L10 11.414l3.293-3.707a1 1 0 011.414 0z" clip-rule="evenodd" />
+          </svg>
+        </button>
+        <div id="mobile-academics" class="hidden bg-gray-100">
+          <a href="/curriculum/curriculum.html" class="block px-4 py-2 hover:bg-gray-200">Curriculum</a>
+          <a href="/faculty/faculty.html" class="block px-4 py-2 hover:bg-gray-200">Faculty</a>
+          <a href="/admission/admission.html" class="block px-4 py-2 hover:bg-gray-200">Admission</a>
+        </div>
+      </div>
+      <div class="relative">
+        <button id="mobile-activities-btn" class="w-full flex justify-between px-4 py-2 hover:bg-gray-100">
+          <span>Activities</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M5.293 7.707a1 1 0 011.414 0L10 11.414l3.293-3.707a1 1 0 011.414 0z" clip-rule="evenodd" />
+          </svg>
+        </button>
+        <div id="mobile-activities" class="hidden bg-gray-100">
+          <a href="/Activities/sports.html" class="block px-4 py-2 hover:bg-gray-200">Sports</a>
+          <a href="/Activities/clubs.html" class="block px-4 py-2 hover:bg-gray-200">Clubs</a>
+          <a href="/Activities/events.html" class="block px-4 py-2 hover:bg-gray-200">Events</a>
+        </div>
+      </div>
+      <a href="#contact" class="block px-4 py-2 hover:bg-gray-100">Contact</a>
+    </div>
+  </nav>
+
+
+    <div class="relative bg-cover bg-center h-screen" style="background-image: url('uploads/hero-backend.jpg');">
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <div class="relative z-10 flex items-center justify-center h-full">
+        <div class="text-center text-white px-4">
+          <h1 class="text-4xl md:text-6xl font-bold mb-4">विद्यालयमा स्वागत छ</h1>
+          <p class="text-lg md:text-2xl mb-8">नेपालको अग्रणी शैक्षिक संस्था</p>
+          <!-- <a href="#enroll" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">अहिले नै भर्ना गर्नुहोस्</a> -->
+        </div>
+      </div>
+    </div>
+    <div class="bg-white text-gray-800">
+      <!-- Welcome Section -->
+      <section class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center px-4">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">Welcome to Modernize School of Kalikot</h2>
+          <p class="text-lg md:text-xl leading-relaxed">
+            Shaping young minds with quality education and holistic development since 2032 B.S.
+          </p>
+        </div>
+      </section>
+    
+      <!-- Why Choose Us Section -->
+      <section class="py-16">
+        <div class="container mx-auto px-4 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-12">Why Choose Us?</h2>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
+              <h3 class="text-xl font-semibold mb-4">Qualified Teachers</h3>
+              <p class="text-gray-600">
+                Learn from experienced educators dedicated to nurturing student potential.
+              </p>
+            </div>
+            <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
+              <h3 class="text-xl font-semibold mb-4">Modern Facilities</h3>
+              <p class="text-gray-600">
+                Enjoy a conducive learning environment with state-of-the-art classrooms and labs.
+              </p>
+            </div>
+            <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
+              <h3 class="text-xl font-semibold mb-4">Extra-Curricular Activities</h3>
+              <p class="text-gray-600">
+                Participate in sports, arts, and cultural programs to develop all-around skills.
+              </p>
+            </div>
           </div>
         </div>
       </section>
+    
+      <!-- Notice Board Section -->
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Notice Board</h2>
+          <div class="space-y-4">
+            <div class="p-4 bg-blue-100 rounded-lg shadow-md flex items-center">
+              <span class="bg-blue-500 text-white rounded-full h-10 w-10 flex items-center justify-center text-lg font-bold mr-4">1</span>
+              <div>
+                <h3 class="font-semibold">Results of second terminal exmanation launching soon</h3>
+                <p class="text-sm text-gray-600">Updated on: December 30, 2024</p>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      </section>
+    
+      <!-- Programs Offered Section -->
+      <section class="py-16">
+        <div class="container mx-auto px-4 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-12">Programs Offered</h2>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
+              <h3 class="text-xl font-semibold mb-4">Primary Education</h3>
+              <p class="text-gray-600">Building a strong foundation for young learners from Class 1 to Class 5.</p>
+            </div>
+            <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
+              <h3 class="text-xl font-semibold mb-4">Secondary Education</h3>
+              <p class="text-gray-600">Focused and structured learning from Class 6 to Class 10.</p>
+            </div>
+            <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
+              <h3 class="text-xl font-semibold mb-4">Higher Secondary Education</h3>
+              <p class="text-gray-600">Advanced studies for Class 11 and 12 with a variety of streams to choose from.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
-      <div class="bg-blue-100 p-6 rounded-lg shadow-md w-full max-w-full mx-auto flex items-center space-x-6">
-        <img src="/images/principal.jpg" alt="Principal" class="w-24 h-24 rounded-full object-cover">
-        <div class="text-gray-700">
-          <h1 class="text-2xl font-semibold text-gray-800 mb-4">Message from the Principal</h1>
-          <p class="leading-relaxed mb-4">
-            Dear Students, Parents, and Staff,
-          </p>
-          <p class="leading-relaxed mb-4">
-            It is with great pleasure that I welcome you all to another exciting academic year at Badimalika Secondary School. As we continue our commitment to excellence in education, we are proud to provide an environment that fosters both personal and academic growth. Our staff is dedicated to supporting each student's unique journey, and we encourage all of you to aim for the highest standards in both learning and character.
-          </p>
-          <p class="leading-relaxed mb-4">
-            Together, let’s work towards building a brighter future for our community. Thank you for your continued trust and support.
-          </p>
-          <p class="font-semibold">
-            Sincerely, <br>
-            Pushpa Raj Baral<br>
-            Principal, Badimalika Secondary School
-          </p>
+    
+    <!-- <section class="py-16 bg-white">
+      <div class="container mx-auto text-center px-4">
+        <h2 class="text-3xl md:text-4xl font-bold mb-8">News & Events</h2>
+        <div class="flex overflow-x-auto space-x-8">
+          <div class="min-w-[300px] bg-blue-50 p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold mb-4">Sports Day 2025</h3>
+            <p class="text-gray-600">Join us for a day full of fun sports activities and competitions!</p>
+            <p class="text-sm text-gray-500 mt-4">Date: 15th March, 2025</p>
+          </div>
+          <div class="min-w-[300px] bg-blue-50 p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold mb-4">Annual Function</h3>
+            <p class="text-gray-600">Come and enjoy performances by our talented students!</p>
+            <p class="text-sm text-gray-500 mt-4">Date: 5th April, 2025</p>
+          </div>
+          <div class="min-w-[300px] bg-blue-50 p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold mb-4">New Admissions Open</h3>
+            <p class="text-gray-600">Admissions for 2025 academic year are now open for all grades.</p>
+            <p class="text-sm text-gray-500 mt-4">Apply by: 31st January, 2025</p>
+          </div>
         </div>
       </div>
-      <div class="bg-gray-100 p-8 rounded-lg shadow-md w-full max-w-full mx-auto">
-        <h2 class="text-3xl font-semibold text-center text-gray-800 mb-6">Hear What Our Students Have To Say</h2>
-        
-        <div class="flex flex-wrap justify-center gap-8">
-          <!-- Student 1 -->
-          <div class="bg-white p-6 rounded-lg shadow-md w-full md:w-1/3">
-            <img src="uploads-students/abhaya.jpg" alt="Student 1" class="w-20 h-20 rounded-full object-cover mx-auto mb-4">
-            <p class="text-gray-700 text-center italic mb-4">
-              "Badimalika Secondary School has given me a place to grow academically and personally. The teachers are supportive, and the environment is nurturing."
-            </p>
-            <p class="text-center font-semibold text-gray-800">Abhaya</p>
+    </section> -->
+    
+    <section class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-8">What Our Students Say</h2>
+        <div class="flex space-x-8 overflow-x-auto">
+          <div class="min-w-[300px] bg-white p-6 rounded-lg shadow-lg">
+            <p class="text-lg font-semibold mb-4">"A life-changing experience!"</p>
+            <p class="text-gray-600">The school has helped me become more confident and achieve my dreams.</p>
+            <p class="text-sm text-gray-500 mt-4">- Anjali, Class 12</p>
           </div>
-          
-          <!-- Student 2
-          <div class="bg-white p-6 rounded-lg shadow-md w-full md:w-1/3">
-            <img src="uploads-students/suppu.jpg" alt="Student 2" class="w-20 h-20 rounded-full object-cover mx-auto mb-4">
-            <p class="text-gray-700 text-center italic mb-4">
-              "I am proud to be part of this school. The extracurricular activities and the sense of community here have really helped me develop my skills."
-            </p>
-            <p class="text-center font-semibold text-gray-800">Supriya</p>
-          </div> -->
-          
-          
+          <div class="min-w-[300px] bg-white p-6 rounded-lg shadow-lg">
+            <p class="text-lg font-semibold mb-4">"A second home!"</p>
+            <p class="text-gray-600">The teachers are supportive, and the environment is nurturing.</p>
+            <p class="text-sm text-gray-500 mt-4">- Raj, Class 10</p>
+          </div>
+          <div class="min-w-[300px] bg-white p-6 rounded-lg shadow-lg">
+            <p class="text-lg font-semibold mb-4">"A place of knowledge and growth!"</p>
+            <p class="text-gray-600">I gained not only academic knowledge but also life skills here.</p>
+            <p class="text-sm text-gray-500 mt-4">- Maya, Alumni</p>
+          </div>
         </div>
       </div>
-      <footer class="bg-blue-800 text-white py-8">
-        <div class="max-w-screen-xl mx-auto px-6 md:flex md:justify-between">
-          <div class="mb-6 md:mb-0">
-            <h3 class="text-2xl font-semibold">Badimalika Secondary School</h3>
-            <p class="text-gray-300 mt-2">Committed to Excellence in Education</p>
-          </div>
-          
-          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-            <div>
-              <h4 class="font-semibold mb-2">Quick Links</h4>
-              <ul class="text-gray-300">
-                <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
-                <li><a href="about-us/about.html" class="hover:text-yellow-300">About</a></li>
-                <li><a href="#" class="hover:text-yellow-300">Admissions</a></li>
-                <li><a href="#" class="hover:text-yellow-300">Contact</a></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h4 class="font-semibold mb-2">Academics</h4>
-              <ul class="text-gray-300">
-                <li><a href="#" class="hover:text-yellow-300">Curriculum</a></li>
-                <li><a href="#" class="hover:text-yellow-300">Departments</a></li>
-                <li><a href="#" class="hover:text-yellow-300">Faculty</a></li>
-                <li><a href="#" class="hover:text-yellow-300">Results</a></li>
-              </ul>
-            </div>
-      
-            <div>
-              <h4 class="font-semibold mb-2">Resources</h4>
-              <ul class="text-gray-300">
-                <li><a href="#" class="hover:text-yellow-300">Library</a></li>
-                <li><a href="#" class="hover:text-yellow-300">E-learning</a></li>
-                <li><a href="#" class="hover:text-yellow-300">Student Portal</a></li>
-              </ul>
-            </div>
-      
-            <div>
-              <h4 class="font-semibold mb-2">Connect With Us</h4>
-              <ul class="text-gray-300">
-                <li><a href="#" class="hover:text-yellow-300">Facebook</a></li>
-                <li><a href="#" class="hover:text-yellow-300">Instagram</a></li>
-                <li><a href="#" class="hover:text-yellow-300">Twitter</a></li>
-                <li><a href="#" class="hover:text-yellow-300">LinkedIn</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      
-        <div class="text-center py-4 text-gray-300">
-          <p>&copy; 2024 Badimalika Secondary School. All rights reserved.</p>
-        </div>
-      </footer>
-      
-    
-      <script>
-        // Mobile menu toggle
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-    
-        menuBtn.addEventListener('click', () => {
-          mobileMenu.classList.toggle('hidden');
-        });
-    
-        // Dropdown toggle for accessibility
-        const dropdownBtn = document.getElementById('dropdown-btn');
-        const dropdownMenu = document.getElementById('dropdown-menu');
-    
-        dropdownBtn.addEventListener('click', () => {
-          const isExpanded = dropdownBtn.getAttribute('aria-expanded') === 'true';
-          dropdownBtn.setAttribute('aria-expanded', !isExpanded);
-          dropdownMenu.classList.toggle('hidden');
-        });
-    
-        dropdownBtn.addEventListener('keydown', (e) => {
-          if (e.key === 'ArrowDown') {
-            e.preventDefault();
-            dropdownMenu.querySelector('a').focus();
-          }
+    </section>
 
-        });
+    <section class="py-16 bg-white">
+      <div class="container mx-auto text-center px-4">
+        <h2 class="text-3xl md:text-4xl font-bold mb-8">Our Achievements</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+         
+       
+          <div class="p-6 bg-blue-100 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300">
+            <div class="text-4xl text-blue-500 mb-4">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3 class="font-semibold text-xl">Best School Community</h3>
+          </div>
+          <div class="p-6 bg-blue-100 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300">
+            <div class="text-4xl text-blue-500 mb-4">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3 class="font-semibold text-xl">Highest Academic Growth Rate</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer Section -->
+<footer class="bg-gray-800 text-white py-16">
+  <div class="container mx-auto px-4">
+    <!-- Footer Top Section -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+      <!-- School Info -->
+      <div>
+        <h3 class="text-2xl font-bold mb-4">Modernize School of Kalikot</h3>
+        <p class="text-gray-400 mb-4">
+          Providing quality education and a nurturing environment for students to grow academically and socially.
+        </p>
+        <p class="text-gray-400">Address: Kalikot, Nepal</p>
+        <p class="text-gray-400">Phone: +977-9758900824</p>
+        <p class="text-gray-400">Email: info@schoolkalikot.edu.np</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-2xl font-bold mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="about-us/about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+          
+          <li><a href="admission/admission.html" class="text-gray-400 hover:text-white">Admissions</a></li>
+          <li><a href="contact/contact.html" class="text-gray-400 hover:text-white">Contact Us</a></li>
+          <li><a href="Privacy.html" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div>
+        <h3 class="text-2xl font-bold mb-4">Follow Us</h3>
+        <div class="flex space-x-6">
+          <a href="#" class="text-gray-400 hover:text-white text-2xl">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white text-2xl">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white text-2xl">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white text-2xl">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom Section -->
+    <div class="border-t border-gray-700 pt-8 text-center">
+      <p class="text-sm text-gray-400">&copy; 2024 Modernize School of Kalikot. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
     
-        dropdownMenu.addEventListener('keydown', (e) => {
-          const focusableItems = dropdownMenu.querySelectorAll('a');
-          const currentIndex = Array.from(focusableItems).indexOf(document.activeElement);
-    
-          if (e.key === 'ArrowDown') {
-            e.preventDefault();
-            const nextIndex = (currentIndex + 1) % focusableItems.length;
-            focusableItems[nextIndex].focus();
-          }
-    
-          if (e.key === 'ArrowUp') {
-            e.preventDefault();
-            const prevIndex = (currentIndex - 1 + focusableItems.length) % focusableItems.length;
-            focusableItems[prevIndex].focus();
-          }
-    
-          if (e.key === 'Escape') {
-            dropdownBtn.focus();
-            dropdownMenu.classList.add('hidden');
-            dropdownBtn.setAttribute('aria-expanded', 'false');
-          }
-        });
-      </script>
+
+  <script src="js/hamburger.js"></script>
+  
 
 </body>
 

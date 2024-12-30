@@ -1,211 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="about.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-        <link rel="icon" href="/471f74d9-7a7c-4024-82b7-251a5aba58a3.jpg" type="image/x-icon">
-        <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body>
+  <header class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <!-- School Logo -->
+        <div class="flex-shrink-0">
+          <a href="#" class="text-2xl font-extrabold text-blue-600">Badimalika School</a>
+        </div>
 
-<body class="bg-gray-100">
-    <nav class="bg-blue-500 text-white shadow">
-        <div class="container mx-auto px-4">
-          <div class="flex justify-between items-center py-4">
-            <!-- Logo -->
-            <div class="text-2xl font-bold">
-              <a href="#" class="hover:text-gray-200">Badimalika</a>
-            </div>
-    
-            <!-- Center Menu Items -->
-            <div class="hidden md:flex space-x-6">
-              <a href="/index.html" class="hover:text-gray-200">Home</a>
-              <a href="/about-us/about.html" class="hover:text-gray-200">About</a>
-              <a href="/backend-school/contact.php" class="hover:text-gray-200">Contact</a>
-    
-              <!-- Dropdown -->
-              <div class="relative">
-                <button
-                  id="dropdown-btn"
-                  class="hover:text-gray-200 focus:outline-none"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Moree
-                </button>
-                <!-- Dropdown Menu -->
-                <div
-                  id="dropdown-menu"
-                  class="absolute hidden bg-white text-gray-700 shadow-lg rounded mt-2 w-40"
-                  aria-label="submenu"
-                >
-                  <a href="#" class="block px-4 py-2 hover:bg-blue-100">Notices</a>
-                  <a href="#" class="block px-4 py-2 hover:bg-blue-100">Vacancy</a>
-                  <a href="#" class="block px-4 py-2 hover:bg-blue-100">Teacher</a>
-                  <a href="#" class="block px-4 py-2 hover:bg-blue-100">Students</a>
-                </div>
-              </div>
-    
-            
-            </div>
-    
-            <!-- Right Side Button -->
-            <div class="hidden md:block">
-              <button class="bg-white text-blue-500 px-4 py-2 rounded hover:bg-gray-200">
-                Get Started
-              </button>
-            </div>
-    
-            <!-- Mobile Menu Button -->
-            <div class="md:hidden">
-              <button id="menu-btn" class="focus:outline-none">
-                <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        <!-- Contact Info -->
+        <div class="hidden md:flex items-center space-x-6">
+          <div class="flex items-center space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M2.003 5.884L10 10.882l7.997-4.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884zM18 8.118l-8 5-8-5V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+            </svg>
+            <span>info@modernizeschool.edu.np</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm12 4H6v2h8V9z" clip-rule="evenodd" />
+            </svg>
+            <span>+977-123-456789</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+    <!-- Navbar Section -->
+    <nav class="bg-white shadow-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Main Navigation -->
+          <div class="hidden md:flex space-x-8">
+            <a href="/index.html" class="hover:text-blue-600 font-medium">Home</a>
+            <a href="about.html" class="hover:text-blue-600 font-medium">About Us</a>
+  
+            <!-- Academics Dropdown -->
+            <div class="relative group">
+              <button class="flex items-center space-x-1 hover:text-blue-600 font-medium">
+                <span>Academics</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5.293 7.707a1 1 0 011.414 0L10 11.414l3.293-3.707a1 1 0 011.414 0z" clip-rule="evenodd" />
                 </svg>
               </button>
+              <div class="absolute left-0 mt-2 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+                <a href="/curriculum/curriculum.html" class="block px-4 py-2 hover:bg-gray-100">Curriculum</a>
+                <a href="/faculty/faculty.html" class="block px-4 py-2 hover:bg-gray-100">Faculty</a>
+                <a href="/admission/admission.html" class="block px-4 py-2 hover:bg-gray-100">Admission</a>
+              </div>
             </div>
+  
+            <!-- Activities Dropdown -->
+            <div class="relative group">
+              <button class="flex items-center space-x-1 hover:text-blue-600 font-medium">
+                <span>Activities</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5.293 7.707a1 1 0 011.414 0L10 11.414l3.293-3.707a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+              </button>
+              <div class="absolute left-0 mt-2 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+                <a href="/Activities/sports.html" class="block px-4 py-2 hover:bg-gray-100">Sports</a>
+                <a href="/Activities/clubs.html" class="block px-4 py-2 hover:bg-gray-100">Clubs</a>
+                <a href="/Activities/events.html" class="block px-4 py-2 hover:bg-gray-100">Events</a>
+                <a href="/backend-school" class="block px-4 py-2 hover:bg-gray-100">Noties</a>
+                <a href="/backend-school/view_vacancies.php" class="block px-4 py-2 hover:bg-gray-100">Vacancy</a>
+                <a href="/backend-school/teachers.php" class="block px-4 py-2 hover:bg-gray-100">Teachers</a>
+                <a href="/backend-school/students.php" class="block px-4 py-2 hover:bg-gray-100">Students</a>
+              </div>
+            </div>
+  
+            <a href="/contact/contact.html" class="hover:text-blue-600 font-medium">Contact</a>
           </div>
-    
-          <!-- Mobile Menu -->
-          <div id="mobile-menu" class="hidden md:hidden bg-blue-500">
-            <a href="/index.html" class="block py-2 px-4 hover:bg-blue-600">Home</a>
-            <a href="#" class="block py-2 px-4 hover:bg-blue-600">About</a>
-            <a href="#" class="block py-2 px-4 hover:bg-blue-600">Services</a>
-            <a href="#" class="block py-2 px-4 hover:bg-blue-600">Contact</a>
-            <button class="block bg-white text-blue-500 w-full px-4 py-2 mt-2 rounded hover:bg-gray-200">
-              Get Started
+  
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden">
+            <button id="mobile-menu-btn" class="text-gray-800 focus:outline-none">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
             </button>
           </div>
         </div>
-      </nav>
-
-    
       </div>
-   
-
-      
-          <!-- Header Section -->
-    <header class="bg-blue-700 text-white py-6">
-        <div class="container mx-auto px-4 text-center">
-            <h1 class="text-3xl font-bold">About Us</h1>
-            <p class="text-lg mt-2">Discover the legacy and vision of Badimalika Secondary School</p>
+  
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+        <a href="/index.html" class="block px-4 py-2 hover:bg-gray-100">Home</a>
+        <a href="about.html" class="block px-4 py-2 hover:bg-gray-100">About Us</a>
+        <div class="relative">
+          <button id="mobile-academics-btn" class="w-full flex justify-between px-4 py-2 hover:bg-gray-100">
+            <span>Academics</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M5.293 7.707a1 1 0 011.414 0L10 11.414l3.293-3.707a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div id="mobile-academics" class="hidden bg-gray-100">
+            <a href="/curriculum/curriculum.html" class="block px-4 py-2 hover:bg-gray-200">Curriculum</a>
+            <a href="/faculty/faculty.html" class="block px-4 py-2 hover:bg-gray-200">Faculty</a>
+            <a href="/admission/admission.html" class="block px-4 py-2 hover:bg-gray-200">Admission</a>
+          </div>
         </div>
-    </header>
-
-    <!-- About Section -->
-    <section class="py-10">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-8 items-center">
-                <!-- Image -->
-                <div>
-                    <img src="/471f74d9-7a7c-4024-82b7-251a5aba58a3.jpg" alt="Badimalika Secondary School" class="rounded-lg shadow-md">
-                </div>
-                <!-- Content -->
-                <div>
-                    <h2 class="text-2xl font-bold mb-4">Welcome to Badimalika Secondary School</h2>
-                    <p class="text-lg mb-4">
-                        Established in 2032 B.S., Badimalika Secondary School has been a beacon of academic excellence and 
-                        holistic development in Nepal. Located amidst the serene surroundings of Kalikot, our school has 
-                        nurtured thousands of young minds with dedication and integrity.
-                    </p>
-                    <h3 class="text-xl font-semibold mb-2">Our Mission</h3>
-                    <p class="text-lg mb-4">
-                        To provide quality education that empowers students to achieve academic success and develop 
-                        essential life skills, preparing them for a bright and prosperous future.
-                    </p>
-                    <h3 class="text-xl font-semibold mb-2">Our Vision</h3>
-                    <p class="text-lg">
-                        We aim to create a nurturing environment where students can excel academically, socially, and 
-                        emotionally, fostering a culture of lifelong learning and leadership.
-                    </p>
-                </div>
-            </div>
+        <div class="relative">
+          <button id="mobile-activities-btn" class="w-full flex justify-between px-4 py-2 hover:bg-gray-100">
+            <span>Activities</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M5.293 7.707a1 1 0 011.414 0L10 11.414l3.293-3.707a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div id="mobile-activities" class="hidden bg-gray-100">
+            <a href="/Activities/sports.html" class="block px-4 py-2 hover:bg-gray-200">Sports</a>
+            <a href="/Activities/clubs.html" class="block px-4 py-2 hover:bg-gray-200">Clubs</a>
+            <a href="/Activities/events.html" class="block px-4 py-2 hover:bg-gray-200">Events</a>
+          </div>
         </div>
+        <a href="/contact/contact.html" class="block px-4 py-2 hover:bg-gray-100">Contact</a>
+      </div>
+    </nav>
+
+    <section class="bg-white py-16">
+      <!-- Hero Section -->
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl font-bold mb-4">About Modernize School of Kalikot</h1>
+        <p class="text-lg text-gray-600">
+          Empowering young minds through excellence in education, innovation, and cultural values.
+        </p>
+      </div>
     </section>
-
-    <!-- Core Values Section -->
-    <section class="bg-gray-200 py-10">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-2xl font-bold mb-6">Our Core Values</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Excellence</h3>
-                    <p class="text-gray-600">Striving for academic and personal excellence in every aspect.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Integrity</h3>
-                    <p class="text-gray-600">Fostering honesty, respect, and strong moral principles.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Community</h3>
-                    <p class="text-gray-600">Building a sense of belonging and responsibility among students.</p>
-                </div>
-            </div>
+    
+    <!-- Mission and Vision -->
+    <section class="bg-gray-50 py-16">
+      <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12">
+        <!-- Mission -->
+        <div class="bg-white p-8 shadow-lg rounded-lg">
+          <h2 class="text-2xl font-bold text-blue-600 mb-4">Our Mission</h2>
+          <p class="text-gray-600">
+            To foster academic excellence and personal growth by providing a dynamic learning environment
+            where students are nurtured to realize their full potential and contribute to society meaningfully.
+          </p>
         </div>
+        <!-- Vision -->
+        <div class="bg-white p-8 shadow-lg rounded-lg">
+          <h2 class="text-2xl font-bold text-blue-600 mb-4">Our Vision</h2>
+          <p class="text-gray-600">
+            To be a leading institution in Nepal that develops confident, innovative, and globally-aware
+            citizens ready to meet future challenges.
+          </p>
+        </div>
+      </div>
     </section>
-
-    <!-- Footer Section -->
-    <footer class="bg-blue-700 text-white py-6">
-        <div class="container mx-auto px-4 text-center">
-            <p class="text-lg">&copy; 2024 Badimalika Secondary School. All rights reserved.</p>
+    
+    <!-- History Section -->
+    <section class="bg-white py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Our History</h2>
+        <div class="grid md:grid-cols-2 gap-12">
+          <div>
+            <img
+              src="/uploads/school.jpg"
+              alt="School Image"
+              class="rounded-lg shadow-lg"
+              loading="lazy"
+            />
+          </div>
+          <div class="flex flex-col justify-center">
+            <p class="text-gray-600 leading-relaxed">
+              Established in 1995, Modernize School of Kalikot started with a vision to provide quality education to the children of Nepal. Over the years, we have grown into a community of passionate educators and eager learners. Our milestones include achieving top academic results and contributing to community development projects in the Kalikot region.
+            </p>
+          </div>
         </div>
-    </footer>
-      <script>
-        // Mobile menu toggle
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
+      </div>
+    </section>
     
-        menuBtn.addEventListener('click', () => {
-          mobileMenu.classList.toggle('hidden');
-        });
+    <!-- Achievements Section -->
+    <section class="bg-gray-50 py-16">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-8">Our Achievements</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div class="p-6 bg-white shadow-lg rounded-lg">
+            <i class="fas fa-trophy text-4xl text-blue-500 mb-4"></i>
+            <h3 class="text-xl font-bold">10+ Awards</h3>
+            <p class="text-gray-600 text-sm">In academic and extracurricular excellence.</p>
+          </div>
+          <div class="p-6 bg-white shadow-lg rounded-lg">
+            <i class="fas fa-user-graduate text-4xl text-blue-500 mb-4"></i>
+            <h3 class="text-xl font-bold">95% Success</h3>
+            <p class="text-gray-600 text-sm">In higher education placements.</p>
+          </div>
+          <div class="p-6 bg-white shadow-lg rounded-lg">
+            <i class="fas fa-heart text-4xl text-blue-500 mb-4"></i>
+            <h3 class="text-xl font-bold">Community Projects</h3>
+            <p class="text-gray-600 text-sm">Involved in local development initiatives.</p>
+          </div>
+          <div class="p-6 bg-white shadow-lg rounded-lg">
+            <i class="fas fa-star text-4xl text-blue-500 mb-4"></i>
+            <h3 class="text-xl font-bold">Top Rankings</h3>
+            <p class="text-gray-600 text-sm">Recognized as one of the best schools in Nepal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
     
-        // Dropdown toggle for accessibility
-        const dropdownBtn = document.getElementById('dropdown-btn');
-        const dropdownMenu = document.getElementById('dropdown-menu');
+    <!-- Meet Our Team -->
+    <section class="bg-white py-16">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-8">Meet Our Team</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="p-6 shadow-lg rounded-lg">
+            <img
+              src="/uploads/principal.jpg"
+              alt="Principal"
+              class="rounded-full mx-auto mb-4 w-24 h-24"
+            />
+            <h3 class="text-xl font-bold">PushpaRaj Baral</h3>
+            <p class="text-gray-600">Principal</p>
+          </div>
+          <div class="p-6 shadow-lg rounded-lg">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Vice Principal"
+              class="rounded-full mx-auto mb-4 w-24 h-24"
+            />
+            <h3 class="text-xl font-bold">Ms. Sita Kumari</h3>
+            <p class="text-gray-600">Vice Principal</p>
+          </div>
+          <div class="p-6 shadow-lg rounded-lg">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Senior Teacher"
+              class="rounded-full mx-auto mb-4 w-24 h-24"
+            />
+            <h3 class="text-xl font-bold">Mr. Ram Bahadur</h3>
+            <p class="text-gray-600">Senior Teacher</p>
+          </div>
+        </div>
+      </div>
+    </section>
     
-        dropdownBtn.addEventListener('click', () => {
-          const isExpanded = dropdownBtn.getAttribute('aria-expanded') === 'true';
-          dropdownBtn.setAttribute('aria-expanded', !isExpanded);
-          dropdownMenu.classList.toggle('hidden');
-        });
+    <!-- Contact Section -->
+    <section class="bg-gray-800 text-white py-16">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-8">Get in Touch</h2>
+        <p class="text-gray-400">We would love to hear from you!</p>
+        <div class="flex flex-col md:flex-row justify-center mt-8 space-y-4 md:space-y-0 md:space-x-4">
+          <a href="mailto:info@schoolkalikot.edu.np" class="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-full">
+            Email Us
+          </a>
+          <a href="tel:+977123456789" class="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-full">
+            Call Us
+          </a>
+        </div>
+      </div>
+    </section>
     
-        dropdownBtn.addEventListener('keydown', (e) => {
-          if (e.key === 'ArrowDown') {
-            e.preventDefault();
-            dropdownMenu.querySelector('a').focus();
-          }
-        });
-    
-        dropdownMenu.addEventListener('keydown', (e) => {
-          const focusableItems = dropdownMenu.querySelectorAll('a');
-          const currentIndex = Array.from(focusableItems).indexOf(document.activeElement);
-    
-          if (e.key === 'ArrowDown') {
-            e.preventDefault();
-            const nextIndex = (currentIndex + 1) % focusableItems.length;
-            focusableItems[nextIndex].focus();
-          }
-    
-          if (e.key === 'ArrowUp') {
-            e.preventDefault();
-            const prevIndex = (currentIndex - 1 + focusableItems.length) % focusableItems.length;
-            focusableItems[prevIndex].focus();
-          }
-    
-          if (e.key === 'Escape') {
-            dropdownBtn.focus();
-            dropdownMenu.classList.add('hidden');
-            dropdownBtn.setAttribute('aria-expanded', 'false');
-          }
-        });
-      </script>
-
+    <script src="/js/hamburger.js"></script>
 </body>
-
 </html>

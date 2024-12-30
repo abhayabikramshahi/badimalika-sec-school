@@ -1,47 +1,45 @@
-// Select elements
-const slides = document.querySelectorAll('.slide');
-const dots = document.querySelectorAll('.dot');
-const nextButton = document.getElementById('next');
-const prevButton = document.getElementById('prev');
+   // Slider Functionality
+   const slider = document.getElementById('slider');
+   const slides = slider.children;
+   const dots = document.querySelectorAll('.dot');
+   const prev = document.getElementById('prev');
+   const next = document.getElementById('next');
 
-let currentIndex = 0;
+   let index = 0;
 
-// Show the active slide and dot
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.toggle('active', i === index);
-  });
-  dots.forEach((dot, i) => {
-    dot.classList.toggle('active', i === index);
-  });
-}
+   function updateSlider() {
+     // Update slide position
+     slider.style.transform = `translateX(-${index * 100}%)`;
 
-// Next Slide
-function nextSlide() {
-  currentIndex = (currentIndex + 1) % slides.length; // Loop back to the start
-  showSlide(currentIndex);
-}
+     // Update dots
+     dots.forEach((dot, dotIndex) => {
+       dot.classList.remove('bg-gray-800');
+       dot.classList.add('bg-gray-300');
+       if (dotIndex === index) {
+         dot.classList.add('bg-gray-800');
+       }
+     });
+   }
 
-// Previous Slide
-function prevSlide() {
-  currentIndex = (currentIndex - 1 + slides.length) % slides.length; // Loop back to the end
-  showSlide(currentIndex);
-}
+   function goToNextSlide() {
+     index = (index + 1) % slides.length;
+     updateSlider();
+   }
 
-// Dot Navigation
-dots.forEach((dot, index) => {
-  dot.addEventListener('click', () => {
-    currentIndex = index;
-    showSlide(currentIndex);
-  });
-});
+   function goToPrevSlide() {
+     index = (index - 1 + slides.length) % slides.length;
+     updateSlider();
+   }
 
-// Auto Slide (every 4 seconds)
-setInterval(nextSlide, 4000);
+   next.addEventListener('click', goToNextSlide);
+   prev.addEventListener('click', goToPrevSlide);
 
-// Button Listeners
-nextButton.addEventListener('click', nextSlide);
-prevButton.addEventListener('click', prevSlide);
+   dots.forEach((dot) => {
+     dot.addEventListener('click', () => {
+       index = parseInt(dot.getAttribute('data-index'));
+       updateSlider();
+     });
+   });
 
-// Show the initial slide
-showSlide(currentIndex);
+   // Auto-Slide (Optional)
+   setInterval(goToNextSlide, 5000); // Change slides every 5 seconds

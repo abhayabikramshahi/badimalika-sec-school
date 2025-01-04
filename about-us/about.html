@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,8 +40,8 @@
         <div class="flex justify-between items-center h-16">
           <!-- Main Navigation -->
           <div class="hidden md:flex space-x-8">
-            <a href="/index.html" class="hover:text-blue-600 font-medium">Home</a>
-            <a href="about.html" class="hover:text-blue-600 font-medium">About Us</a>
+            <a class='hover:text-blue-600 font-medium' href='/'>Home</a>
+            <a class='hover:text-blue-600 font-medium' href='/about-us/about'>About Us</a>
   
             <!-- Academics Dropdown -->
             <div class="relative group">
@@ -51,9 +52,9 @@
                 </svg>
               </button>
               <div class="absolute left-0 mt-2 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
-                <a href="/curriculum/curriculum.html" class="block px-4 py-2 hover:bg-gray-100">Curriculum</a>
+                <a class='block px-4 py-2 hover:bg-gray-100' href='/curriculum/curriculum'>Curriculum</a>
                 <a href="/faculty/faculty.html" class="block px-4 py-2 hover:bg-gray-100">Faculty</a>
-                <a href="/admission/admission.html" class="block px-4 py-2 hover:bg-gray-100">Admission</a>
+                <a class='block px-4 py-2 hover:bg-gray-100' href='/admission/admission'>Admission</a>
               </div>
             </div>
   
@@ -66,9 +67,9 @@
                 </svg>
               </button>
               <div class="absolute left-0 mt-2 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
-                <a href="/Activities/sports.html" class="block px-4 py-2 hover:bg-gray-100">Sports</a>
-                <a href="/Activities/clubs.html" class="block px-4 py-2 hover:bg-gray-100">Clubs</a>
-                <a href="/Activities/events.html" class="block px-4 py-2 hover:bg-gray-100">Events</a>
+                <a class='block px-4 py-2 hover:bg-gray-100' href='/activities/sports'>Sports</a>
+                <a class='block px-4 py-2 hover:bg-gray-100' href='/activities/clubs'>Clubs</a>
+                <a class='block px-4 py-2 hover:bg-gray-100' href='/activities/events'>Events</a>
                 <a href="/backend-school" class="block px-4 py-2 hover:bg-gray-100">Noties</a>
                 <a href="/backend-school/view_vacancies.php" class="block px-4 py-2 hover:bg-gray-100">Vacancy</a>
                 <a href="/backend-school/teachers.php" class="block px-4 py-2 hover:bg-gray-100">Teachers</a>
@@ -76,7 +77,7 @@
               </div>
             </div>
   
-            <a href="/contact/contact.html" class="hover:text-blue-600 font-medium">Contact</a>
+            <a class='hover:text-blue-600 font-medium' href='/contact/contact'>Contact</a>
           </div>
   
           <!-- Mobile Menu Button -->
@@ -92,8 +93,8 @@
   
       <!-- Mobile Menu -->
       <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
-        <a href="/index.html" class="block px-4 py-2 hover:bg-gray-100">Home</a>
-        <a href="about.html" class="block px-4 py-2 hover:bg-gray-100">About Us</a>
+        <a class='block px-4 py-2 hover:bg-gray-100' href='/'>Home</a>
+        <a class='block px-4 py-2 hover:bg-gray-100' href='/about-us/about'>About Us</a>
         <div class="relative">
           <button id="mobile-academics-btn" class="w-full flex justify-between px-4 py-2 hover:bg-gray-100">
             <span>Academics</span>
@@ -102,9 +103,9 @@
             </svg>
           </button>
           <div id="mobile-academics" class="hidden bg-gray-100">
-            <a href="/curriculum/curriculum.html" class="block px-4 py-2 hover:bg-gray-200">Curriculum</a>
+            <a class='block px-4 py-2 hover:bg-gray-200' href='/curriculum/curriculum'>Curriculum</a>
             <a href="/faculty/faculty.html" class="block px-4 py-2 hover:bg-gray-200">Faculty</a>
-            <a href="/admission/admission.html" class="block px-4 py-2 hover:bg-gray-200">Admission</a>
+            <a class='block px-4 py-2 hover:bg-gray-200' href='/admission/admission'>Admission</a>
           </div>
         </div>
         <div class="relative">
@@ -115,12 +116,12 @@
             </svg>
           </button>
           <div id="mobile-activities" class="hidden bg-gray-100">
-            <a href="/Activities/sports.html" class="block px-4 py-2 hover:bg-gray-200">Sports</a>
-            <a href="/Activities/clubs.html" class="block px-4 py-2 hover:bg-gray-200">Clubs</a>
-            <a href="/Activities/events.html" class="block px-4 py-2 hover:bg-gray-200">Events</a>
+            <a class='block px-4 py-2 hover:bg-gray-200' href='/activities/sports'>Sports</a>
+            <a class='block px-4 py-2 hover:bg-gray-200' href='/activities/clubs'>Clubs</a>
+            <a class='block px-4 py-2 hover:bg-gray-200' href='/activities/events'>Events</a>
           </div>
         </div>
-        <a href="/contact/contact.html" class="block px-4 py-2 hover:bg-gray-100">Contact</a>
+        <a class='block px-4 py-2 hover:bg-gray-100' href='/contact/contact'>Contact</a>
       </div>
     </nav>
 
@@ -243,21 +244,216 @@
       </div>
     </section>
     
-    <!-- Contact Section -->
-    <section class="bg-gray-800 text-white py-16">
-      <div class="container mx-auto px-4 text-center">
-        <h2 class="text-3xl font-bold mb-8">Get in Touch</h2>
-        <p class="text-gray-400">We would love to hear from you!</p>
-        <div class="flex flex-col md:flex-row justify-center mt-8 space-y-4 md:space-y-0 md:space-x-4">
-          <a href="mailto:info@schoolkalikot.edu.np" class="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-full">
-            Email Us
-          </a>
-          <a href="tel:+977123456789" class="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-full">
-            Call Us
-          </a>
+     <!-- Gallery Section -->
+     <section class="py-12" id="Gallery">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Gallery</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            
+            <!-- Image 1 -->
+            <div class="overflow-hidden">
+              <img 
+                src="/uploads-school/1.jpeg" 
+               
+                class="w-full h-auto object-cover" 
+                loading="lazy"
+              >
+            </div>
+    
+            <!-- Image 2 -->
+            <div class="overflow-hidden">
+              <img 
+                src="/uploads-school/2.jpeg" 
+               
+                class="w-full h-auto object-cover" 
+                loading="lazy"
+              >
+            </div>
+    
+            <!-- Image 3 -->
+            <div class="overflow-hidden">
+              <img 
+                src="/uploads-school/3.jpeg" 
+               
+                class="w-full h-auto object-cover" 
+                loading="lazy"
+              >
+            </div>
+    
+            <!-- Image 4 -->
+            <div class="overflow-hidden">
+              <img 
+                src="/uploads-school/4.jpeg" 
+                alt="Bridge and Water" 
+                class="w-full h-auto object-cover" 
+                loading="lazy"
+              >
+            </div>
+    
+        
+    
+            <!-- Image 6 -->
+            <div class="overflow-hidden">
+              <img 
+                src="/uploads-school/5.jpeg" 
+                
+                class="w-full h-auto object-cover" 
+                loading="lazy"
+              >
+            </div>
+    
+            <!-- Image 7 -->
+            <div class="overflow-hidden">
+              <img 
+                src="/uploads-school/6.jpeg" 
+              
+                class="w-full h-auto object-cover" 
+                loading="lazy"
+              >
+            </div>
+    
+            <!-- Image 8 -->
+            <div class="overflow-hidden">
+              <img 
+                src="/uploads-school/7.jpeg" 
+               
+                class="w-full h-auto object-cover" 
+                loading="lazy"
+              >
+            </div>
+    
+            <!-- Image 9 -->
+            <div class="overflow-hidden">
+              <img 
+                src="/uploads-school/8.jpeg" 
+              
+                class="w-full h-auto object-cover" 
+                loading="lazy"
+              >
+            </div>
+            <div class="overflow-hidden">
+                <img 
+                  src="/uploads-school/8.jpeg" 
+                
+                  class="w-full h-auto object-cover" 
+                  loading="lazy"
+                >
+              </div>
+              <div class="overflow-hidden">
+                <img 
+                  src="/uploads-school/10.jpeg" 
+                
+                  class="w-full h-auto object-cover" 
+                  loading="lazy"
+                >
+              </div>
+              <div class="overflow-hidden">
+                <img 
+                  src="/uploads-school/11.jpeg" 
+                
+                  class="w-full h-auto object-cover" 
+                  loading="lazy"
+                >
+              </div>
+              <div class="overflow-hidden">
+                <img 
+                  src="/uploads-school/12.jpeg" 
+                
+                  class="w-full h-auto object-cover" 
+                  loading="lazy"
+                >
+              </div>
+              <div class="overflow-hidden">
+                <img 
+                  src="/uploads-school/13.jpeg" 
+                
+                  class="w-full h-auto object-cover" 
+                  loading="lazy"
+                >
+              </div>
+              <div class="overflow-hidden">
+                <img 
+                  src="/uploads-school/14.jpeg" 
+                
+                  class="w-full h-auto object-cover" 
+                  loading="lazy"
+                >
+              </div>
+              <div class="overflow-hidden">
+                <img 
+                  src="/uploads-school/14.jpeg" 
+                
+                  class="w-full h-auto object-cover" 
+                  loading="lazy"
+                >
+              </div>
+              <div class="overflow-hidden">
+                <img 
+                  src="/uploads-school/15.jpeg" 
+                
+                  class="w-full h-auto object-cover" 
+                  loading="lazy"
+                >
+              </div>
+              <div class="overflow-hidden">
+                <img 
+                  src="/uploads-school/16.jpeg" 
+                
+                  class="w-full h-auto object-cover" 
+                  loading="lazy"
+                >
+              </div>
+              <div class="overflow-hidden">
+                <img 
+                  src="/uploads-school/17.jpeg" 
+                
+                  class="w-full h-auto object-cover" 
+                  loading="lazy"
+                >
+              </div>
+              <div class="overflow-hidden">
+                <img 
+                  src="/uploads-school/18.jpeg" 
+                
+                  class="w-full h-auto object-cover" 
+                  loading="lazy"
+                >
+              </div>
+              <div class="overflow-hidden">
+                <img 
+                  src="/uploads-school/19.jpeg" 
+                
+                  class="w-full h-auto object-cover" 
+                  loading="lazy"
+                >
+              </div>
+              <div class="overflow-hidden">
+                <img 
+                  src="/uploads-school/20.jpeg" 
+                
+                  class="w-full h-auto object-cover" 
+                  loading="lazy"
+                >
+              </div>
+              <div class="overflow-hidden">
+                <img 
+                  src="/uploads-school/21.jpeg" 
+                
+                  class="w-full h-auto object-cover" 
+                  loading="lazy"
+                >
+              </div>
+              <div class="overflow-hidden">
+                <img 
+                  src="/uploads-school/22.jpeg" 
+                
+                  class="w-full h-auto object-cover" 
+                  loading="lazy"
+                >
+              </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     
     <script src="/js/hamburger.js"></script>
 </body>

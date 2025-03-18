@@ -1,7 +1,7 @@
 import React from 'react';
 import '../index.css'
 
-import KrishnaParsad from '../image-teacher/Krishna.jpg';
+import KrishnaParsad from '../image-teacher/krishna.jpg';
 import ManojParsadShah from '../image-teacher/manoj.jpg';
 import Mekindra from '../image-teacher/mekindra.jpg';
 import DK from '../image-teacher/dk.jpg';

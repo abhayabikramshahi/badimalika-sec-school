@@ -1,16 +1,14 @@
-import { Route, Routes } from "react-router-dom"
-import Home from "./Pages/Home"
-import Navbar from "./Components/Navbar"
-import Curriculum from "./Pages/Curriculum"
-import Faculty from "./Pages/Faculty"
-import Admission from "./Pages/Admission"
-import Sports from "./Pages/Sports"
-import AboutUs from "./Pages/AboutUs"
-import ContactUs from "./Pages/ContactUs"
-import Gallery from "./Pages/Gallery"
+import { Route, Routes } from "react-router-dom";
+import Home from "./Pages/Home";
+import Navbar from "./Components/Navbar";
+import Curriculum from "./Pages/Curriculum";
+import Faculty from "./Pages/Faculty";
+import Admission from "./Pages/Admission";
+import Sports from "./Pages/Sports";
+import AboutUs from "./Pages/AboutUs";
+import ContactUs from "./Pages/ContactUs";
 
 function App() {
-
   return (
     <>
       <Navbar />
@@ -31,11 +29,10 @@ function App() {
           <Route path="Students" element={<Admission />} />
         </Route>
         <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/Contact" element={<ContactUs />} />
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

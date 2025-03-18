@@ -13,33 +13,40 @@ const Home = () => {
           </div>
         </div>
       </div>
+
       <div className="bg-white text-gray-800">
         <section className="py-16 bg-gray-100">
           <div className="container mx-auto text-center px-4">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Welcome to Badimalika Secondary School </h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Welcome to Badimalika Secondary School</h2>
             <p className="text-lg md:text-xl leading-relaxed">
               Shaping young minds with quality education and holistic development since 2032 B.S.
             </p>
           </div>
         </section>
 
+        {/* Zigzag Layout for Features */}
         <section className="py-16">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12">Why Choose Us?</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="p-6 bg-gray-100 rounded-lg shadow-lg">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Why Choose Us?</h2>
+            <div className="flex flex-col lg:flex-row justify-between items-center space-y-12 lg:space-y-0 lg:space-x-12">
+              {/* First Feature */}
+              <div className="p-6 bg-gray-100 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 lg:w-1/3">
                 <h3 className="text-xl font-semibold mb-4">Qualified Teachers</h3>
                 <p className="text-gray-600">
                   Learn from experienced educators dedicated to nurturing student potential.
                 </p>
               </div>
-              <div className="p-6 bg-gray-100 rounded-lg shadow-lg">
+
+              {/* Second Feature */}
+              <div className="p-6 bg-gray-100 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 lg:w-1/3">
                 <h3 className="text-xl font-semibold mb-4">Modern Facilities</h3>
                 <p className="text-gray-600">
                   Enjoy a conducive learning environment with state-of-the-art classrooms and labs.
                 </p>
               </div>
-              <div className="p-6 bg-gray-100 rounded-lg shadow-lg">
+
+              {/* Third Feature */}
+              <div className="p-6 bg-gray-100 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 lg:w-1/3">
                 <h3 className="text-xl font-semibold mb-4">Extra-Curricular Activities</h3>
                 <p className="text-gray-600">
                   Participate in sports, arts, and cultural programs to develop all-around skills.
@@ -49,6 +56,7 @@ const Home = () => {
           </div>
         </section>
 
+        {/* Notice Board */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Notice Board</h2>
@@ -56,7 +64,7 @@ const Home = () => {
               <div className="p-4 bg-blue-100 rounded-lg shadow-md flex items-center">
                 <span className="bg-blue-500 text-white rounded-full h-10 w-10 flex items-center justify-center text-lg font-bold mr-4">1</span>
                 <div>
-                  <h3 className="font-semibold">Results of second terminal exmanation launching soon</h3>
+                  <h3 className="font-semibold">Results of second terminal examination launching soon</h3>
                   <p className="text-sm text-gray-600">Updated on: December 30, 2024</p>
                 </div>
               </div>
@@ -64,7 +72,8 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="py-16">
+        {/* Programs Offered */}
+        <section className="py-16 bg-gray-100">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-12">Programs Offered</h2>
             <div className="grid md:grid-cols-3 gap-8">
@@ -85,7 +94,8 @@ const Home = () => {
         </section>
       </div>
 
-      <section className="py-16 bg-gray-100">
+      {/* Student Testimonials */}
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">What Our Students Say</h2>
           <div className="flex space-x-8 overflow-x-auto">
@@ -108,6 +118,7 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Achievements */}
       <section className="py-16 bg-white">
         <div className="container mx-auto text-center px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">Our Achievements</h2>
@@ -128,6 +139,7 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Footer */}
       <footer className="bg-gray-800 text-white py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
